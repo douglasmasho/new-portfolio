@@ -1,9 +1,9 @@
 @keyframes expand{
     0%{
-        width: 50%;
+        letter-spacing: normal;
     }
     100%{
-        width: 100%;
+        letter-spacing: 6rem;
     }
 }
 
@@ -64,16 +64,6 @@
     }
 }
 
-@keyframes expand{
-    0%{
-        width: 0%;
-        opacity: 0;
-    }
-    100%{
-        width: 40%;
-        opacity: 1;
-    }
-}
 
 @keyframes collapse{
     0%{
