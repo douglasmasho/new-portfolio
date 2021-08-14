@@ -1,0 +1,36 @@
+.carousel{
+    &__container{
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    &__item{
+        width: 60rem;
+        height: 40rem;
+        background-position: center;
+        background-size: cover;
+        // @include center;
+        border-radius: 20px;
+        @include respond(phone){
+            width: 100vw;
+            height: 100vh;
+            border-radius: 0px !important;
+        }
+        
+    }
+
+    &__arrow{
+        border: none;
+        background: none;
+        cursor: pointer;
+        @include respond(phone){
+            display: none;
+        }
+    }
+}
+
+.BrainhubCarousel__container{
+ display: flex !important;
+ justify-content: center !important;
+}

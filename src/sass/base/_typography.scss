@@ -1,0 +1,67 @@
+body{
+    font-family: "Poppins", sans-serif;
+}
+.white-text{
+    color: white;
+}
+
+.header-text{
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.red-ish-text{
+    color: $red-ish;
+}
+
+.deep-blue-text{
+    color: $deep-blue
+}
+
+.red-text{
+    color: red;
+}
+
+.small-text{
+    font-size: 1.3rem !important;
+}
+.normal-text{
+    font-size: 1.5rem;
+    @include respond(tab-port){
+        font-size: 3rem;
+     }
+    @include respond(phone){
+        font-size: 3rem;  
+      }
+}
+
+.bigger-text{
+    font-size: 2rem;
+    @include respond(tab-port){
+        font-size: 4rem;
+     }
+    @include respond(phone){
+        font-size: 4rem;  
+      }
+}
+
+.align-center{
+    text-align: center;
+}
+
+.center-text{
+    text-align: center;
+}
+
+.capitalize-text{
+    text-transform: capitalize;
+}
+
+.deep-blue-text{
+    color: $deep-blue !important;
+}
+
+.justify-text{
+    text-align: justify;
+}
