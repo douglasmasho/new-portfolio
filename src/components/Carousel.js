@@ -7,12 +7,13 @@ import ImageThree from "../assets/dev.jpg"
 import ArrowLeft from "../assets/arrows_left.svg";
 import ArrowRight from "../assets/arrows_right.svg";
 import { ThemeContext } from '../contexts/ThemeContext';
+import AboutHeader from './headers/AboutHeader';
+import DesignHeader from './headers/DesignHeader';
+import DevHeader from './headers/DevHeader';
+
 
 const CarouselComp = () => {
   const {theme, setTheme} = useContext(ThemeContext);
-  useEffect(()=>{
-    console.log(theme)
-  })
 
   let displayPropLeft;
   switch(theme.value){
@@ -35,28 +36,16 @@ const CarouselComp = () => {
   let textComp;
   switch(theme.id){
     case "about": 
-       textComp = (<>
-       <h1 class="carousel__text carousel__text--1" style={{color: theme.accent}}>I AM</h1>
-       <h1 class="carousel__text carousel__text--2" style={{color: theme.accent}}>Douglas</h1>
-                    </>)
+       textComp = <AboutHeader accent={theme.accent}/>
        break;
     case "dev": 
-       textComp = (<>
-       <h1 class="carousel__text carousel__text--1" style={{color: theme.accent}}>I DO</h1>
-       <h1 class="carousel__text carousel__text--2" style={{color: theme.accent}}>Dev</h1>
-                    </>)
+       textComp = <DevHeader accent={theme.accent}/>
        break;
     case "design": 
-       textComp = (<>
-       <h1 class="carousel__text carousel__text--1" style={{color: theme.accent}}>I DO</h1>
-       <h1 class="carousel__text carousel__text--2" style={{color: theme.accent}}>Design</h1>
-                    </>)
+       textComp = <DesignHeader accent={theme.accent}/>
        break;
     default: 
-       textComp = (<>
-       <h1 class="carousel__text carousel__text--1" style={{color: theme.accent}}>I AM</h1>
-       <h1 class="carousel__text carousel__text--2" style={{color: theme.accent}}>Douglas</h1>
-                    </>)
+       textComp = <AboutHeader accent={theme.accent}/>
        break;
   }
     return (
@@ -64,14 +53,15 @@ const CarouselComp = () => {
         <Carousel className=" carousel__container center-hrz"
         value={theme.value}
         onChange={setTheme}
+        animationSpeed ={900}
             plugins={[
                 {
                   resolve: arrowsPlugin,
                   options: {
-                    arrowLeft: <button className="carousel__arrow"><i class="fas fa-chevron-left" style={{color: theme.accent, display: displayPropLeft}}></i></button>,
-                    arrowLeftDisabled:<button className="carousel__arrow"><i class="fas fa-chevron-left" style={{color: theme.accent, display: displayPropLeft}}></i></button>,
-                    arrowRight: <button className="carousel__arrow"><i class="fas fa-chevron-right" style={{color: theme.accent, display: displayPropRight}}></i></button>,
-                    arrowRightDisabled: <button className="carousel__arrow"><i class="fas fa-chevron-right" style={{color: theme.accent, display: displayPropRight}}></i></button>,
+                    arrowLeft: <button className="carousel__arrow"><i className="fas fa-chevron-left" style={{color: theme.accent, display: displayPropLeft}}></i></button>,
+                    arrowLeftDisabled:<button className="carousel__arrow"><i className="fas fa-chevron-left" style={{color: theme.accent, display: displayPropLeft}}></i></button>,
+                    arrowRight: <button className="carousel__arrow"><i className="fas fa-chevron-right" style={{color: theme.accent, display: displayPropRight}}></i></button>,
+                    arrowRightDisabled: <button className="carousel__arrow"><i className="fas fa-chevron-right" style={{color: theme.accent, display: displayPropRight}}></i></button>,
                     addArrowClickHandler: true,
                   }
                 }

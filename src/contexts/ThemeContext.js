@@ -13,7 +13,7 @@ const ThemeContextProvider = (props) => {
 
         {
             accent: "#709AFF",
-            background: "#E0E0E0",
+            background: "#e7e7e7",
             value: 1,
             id: "about"
         },

@@ -8,9 +8,12 @@ import { ThemeContext } from './contexts/ThemeContext';
 function App() {
   const {theme, setTheme} = useContext(ThemeContext);
 
+  
+
   return (
     <div className="App" style={{backgroundColor: theme.background}}>
      <CarouselComp/>
+     {/* <input type="text" onChange={handleChange} value={value}/> */}
     </div>
   );
 }
