@@ -22,7 +22,7 @@ const DevHeader = ({accent}) => {
     const springs = useTrail(3, {
         from: { opacity: 0, marginLeft:  -100, marginRight: 100},
         to: { opacity: 1 , marginLeft: 0, marginRight: 0,},
-        config: { tension: 250},
+        config: { mass: 3},
       });
 
     return (

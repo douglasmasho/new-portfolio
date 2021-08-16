@@ -5,6 +5,7 @@ import '@brainhubeu/react-carousel/lib/style.css';
 import "./sass/main.scss";
 import { ThemeContext } from './contexts/ThemeContext';
 
+
 function App() {
   const {theme, setTheme} = useContext(ThemeContext);
 
@@ -13,7 +14,6 @@ function App() {
   return (
     <div className="App" style={{backgroundColor: theme.background}}>
      <CarouselComp/>
-     {/* <input type="text" onChange={handleChange} value={value}/> */}
     </div>
   );
 }

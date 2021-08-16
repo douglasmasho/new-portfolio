@@ -32,3 +32,29 @@ html{
 .App{
   transition: all .8s;
 }
+
+
+.scroll-down{
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 1rem;
+
+  & i{
+      font-size: 2rem;
+      transition: all .5s;
+      // font-weight: lighter;
+      
+  }
+}
+
+.scroll-container{
+  position: absolute;
+  bottom: 0;
+  &:hover  p{
+    font-size: 1.5rem !important;
+  }
+  & p{
+    transition: all .5s;
+  }
+}

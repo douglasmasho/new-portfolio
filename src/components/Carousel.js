@@ -49,19 +49,19 @@ const CarouselComp = () => {
        break;
   }
     return (
-        <div className="center-hrz" style={{position: "relative"}}>
+        <div className="center-hrz--col" style={{position: "relative"}}>
         <Carousel className=" carousel__container center-hrz"
         value={theme.value}
         onChange={setTheme}
-        animationSpeed ={900}
+        animationSpeed ={800}
             plugins={[
                 {
                   resolve: arrowsPlugin,
                   options: {
-                    arrowLeft: <button className="carousel__arrow"><i className="fas fa-chevron-left" style={{color: theme.accent, display: displayPropLeft}}></i></button>,
-                    arrowLeftDisabled:<button className="carousel__arrow"><i className="fas fa-chevron-left" style={{color: theme.accent, display: displayPropLeft}}></i></button>,
-                    arrowRight: <button className="carousel__arrow"><i className="fas fa-chevron-right" style={{color: theme.accent, display: displayPropRight}}></i></button>,
-                    arrowRightDisabled: <button className="carousel__arrow"><i className="fas fa-chevron-right" style={{color: theme.accent, display: displayPropRight}}></i></button>,
+                    arrowLeft: <button className="carousel__arrow"><i className="lni lni-chevron-left" style={{color: theme.accent, display: displayPropLeft}}></i></button>,
+                    arrowLeftDisabled:<button className="carousel__arrow"><i className="lni lni-chevron-left" style={{color: theme.accent, display: displayPropLeft}}></i></button>,
+                    arrowRight: <button className="carousel__arrow"><i className="lni lni-chevron-right" style={{color: theme.accent, display: displayPropRight}}></i></button>,
+                    arrowRightDisabled: <button className="carousel__arrow"><i className="lni lni-chevron-right" style={{color: theme.accent, display: displayPropRight}}></i></button>,
                     addArrowClickHandler: true,
                   }
                 }
@@ -76,6 +76,10 @@ const CarouselComp = () => {
             </div>
         </Carousel>
         {textComp}
+        <div className="scroll-container center-hrz--col">
+          <p class="small-text" style={{color: theme.accent}}>Scroll for more</p>
+          <button className="scroll-down"><i className="lni lni-chevron-down" style={{color: theme.accent}}></i></button>
+        </div>
         </div>
     )
 }
