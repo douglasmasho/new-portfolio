@@ -5,22 +5,23 @@ export const ThemeContext = createContext();
 const ThemeContextProvider = (props) => {
     const themes = [
         {
-            accent: "#FFD341",
-            background: "#353535",
+            accent: "#DB00FF",
+            textColor: "#2665FF",
+            background: "#250e8f",
             value: 0,
             id: "design"
         },
 
         {
-            accent: "#709AFF",
-            background: "#e7e7e7",
+            accent: "#96ffca",
+            background: "#1544C0",
             value: 1,
             id: "about"
         },
 
         {
-            accent: "#FF4E55",
-            background: "#060606",
+            accent: "#27DEBF",
+            background: "#621BC0",
             value: 2,
             id: "dev"
         },

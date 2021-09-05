@@ -4,6 +4,7 @@ import Slider from "./components/Slider";
 import '@brainhubeu/react-carousel/lib/style.css';
 import "./sass/main.scss";
 import { ThemeContext } from './contexts/ThemeContext';
+import Navbar from 'components/Navbar';
 
 
 function App() {
@@ -13,7 +14,11 @@ function App() {
 
   return (
     <div className="App" style={{backgroundColor: theme.background}}>
+      <Navbar/>
      <CarouselComp/>
+     <button onClick={()=>{
+                console.log("ijoij")
+            }}>iijoij</button>
     </div>
   );
 }

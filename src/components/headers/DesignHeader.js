@@ -26,20 +26,11 @@ const DesignHeader = ({accent}) => {
 
     return (
         <>
-          <h1 className="carousel__text carousel__text--1" style={{color: accent}}>
-              {/* {transition((style, item) => {
-                   return <animated.div style={style}>{item}</animated.div>;
-               })} */}
-               {springs1.map((style, index)=>{
-                  return <animated.div style={style} key={index}>{topWord[index]}</animated.div>
-               })}
-          </h1>
-          <h1 className="carousel__text carousel__text--2" style={{color: accent}}>
+        <h1 className="carousel__text carousel__text--2-test carousel__text--2-test--design" style={{color: accent}}>
               {springs.map((style, index)=>{
                   return <animated.div style={style} key={index}>{bottomWord[index]}</animated.div>
               })}
           </h1>
-
         </>
     )
 }

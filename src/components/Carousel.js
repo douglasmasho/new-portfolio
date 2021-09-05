@@ -2,8 +2,8 @@ import React, {useState, useContext, useEffect} from 'react'
 import Carousel, { Dots,  arrowsPlugin } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 import ImageOne from "../assets/memos.jpg"
-import ImageTwo from "../assets/design.jpg"
-import ImageThree from "../assets/dev.jpg"
+import ImageTwo from "../assets/Group 61.svg"
+import ImageThree from "../assets/Group 60.svg"
 import ArrowLeft from "../assets/arrows_left.svg";
 import ArrowRight from "../assets/arrows_right.svg";
 import { ThemeContext } from '../contexts/ThemeContext';
@@ -68,17 +68,20 @@ const CarouselComp = () => {
               ]}
         >
 
-            <div className="carousel__item" style={{backgroundImage: `url(${ImageTwo})`}}>
-            </div>
+            <img className="carousel__img" src={ImageTwo}/>   
+
             <div className="carousel__item" style={{backgroundImage: `url(${ImageOne})`}}>
             </div>
-            <div className="carousel__item" style={{backgroundImage: `url(${ImageThree})`}}>   
-            </div>
+            <img className="carousel__img" src={ImageThree}/>   
+            
         </Carousel>
         {textComp}
         <div className="scroll-container center-hrz--col">
           <p class="small-text" style={{color: theme.accent}}>Scroll for more</p>
           <button className="scroll-down"><i className="lni lni-chevron-down" style={{color: theme.accent}}></i></button>
+          <div>
+
+          </div>
         </div>
         </div>
     )
