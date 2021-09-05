@@ -28,13 +28,14 @@ const AboutHeader = ({accent}) => {
         <>
         <div data-speed="10">
         <h1 className="carousel__text carousel__text--1-test carousel__text--1-test--me" style={{color: accent}}>
+            
               {springs1.map((style, index)=>{
-                  return <animated.div style={style} key={index}>{topWord[index]}</animated.div>
+                  return <animated.div className="layer" data-speed="5" style={style} key={index}>{topWord[index]}</animated.div>
               })}
           </h1>
         <h1 className="carousel__text carousel__text--2-test carousel__text--2-test--me"   style={{color: accent}}>
               {springs.map((style, index)=>{
-                  return <animated.div style={style} key={index}>{bottomWord[index]}</animated.div>
+                  return <animated.div className="layer" data-speed="-2" style={style} key={index}>{bottomWord[index]}</animated.div>
               })}
           </h1>
         </div>

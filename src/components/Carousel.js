@@ -16,7 +16,32 @@ const CarouselComp = () => {
   const {theme, setTheme} = useContext(ThemeContext);
 
 
+  useEffect(()=>{
+    document.addEventListener("mousemove", parralax);
+    document.addEventListener("mousemove", parralax2);
 
+
+    function parralax(e){
+      document.querySelectorAll(".layer").forEach(layer=>{
+        const speed = layer.getAttribute("data-speed");
+
+        const x = (window.innerWidth = e.pageX*speed)/100;
+        const y = (window.innerheight = e.pageY*speed)/100;
+
+        layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+      })
+    }
+
+    function parralax2(e){
+      document.querySelectorAll(".layer2").forEach(layer=>{
+        const speed = layer.getAttribute("data-speed");
+
+        const x = (window.innerWidth = e.pageX*speed)/100;
+
+        layer.style.transform = `translateX(${x}px)`
+      })
+    }
+  },[])
 
   let displayPropLeft;
   switch(theme.value){
@@ -71,9 +96,9 @@ const CarouselComp = () => {
               ]}
         >
 
-            <img className="carousel__img layer" data-speed="-10" src={ImageTwo}/>   
-            <img className="carousel__img layer" data-speed="-10" src={ImageOne}/>   
-            <img className="carousel__img layer" data-speed="-10" src={ImageThree}/>   
+            <img className="carousel__img layer" data-speed="-1" src={ImageTwo}/>   
+            <img className="carousel__img layer" data-speed="-1" src={ImageOne}/>   
+            <img className="carousel__img layer" data-speed="-1" src={ImageThree}/>   
             
         </Carousel>
         {textComp}
