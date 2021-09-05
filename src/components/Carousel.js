@@ -1,7 +1,7 @@
 import React, {useState, useContext, useEffect} from 'react'
 import Carousel, { Dots,  arrowsPlugin } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
-import ImageOne from "../assets/memos.jpg"
+import ImageOne from "../assets/coder.svg"
 import ImageTwo from "../assets/Group 61.svg"
 import ImageThree from "../assets/Group 60.svg"
 import ArrowLeft from "../assets/arrows_left.svg";
@@ -14,6 +14,9 @@ import DevHeader from './headers/DevHeader';
 
 const CarouselComp = () => {
   const {theme, setTheme} = useContext(ThemeContext);
+
+
+
 
   let displayPropLeft;
   switch(theme.value){
@@ -68,11 +71,9 @@ const CarouselComp = () => {
               ]}
         >
 
-            <img className="carousel__img" src={ImageTwo}/>   
-
-            <div className="carousel__item" style={{backgroundImage: `url(${ImageOne})`}}>
-            </div>
-            <img className="carousel__img" src={ImageThree}/>   
+            <img className="carousel__img layer" data-speed="-10" src={ImageTwo}/>   
+            <img className="carousel__img layer" data-speed="-10" src={ImageOne}/>   
+            <img className="carousel__img layer" data-speed="-10" src={ImageThree}/>   
             
         </Carousel>
         {textComp}

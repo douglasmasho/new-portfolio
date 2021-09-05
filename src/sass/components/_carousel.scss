@@ -38,23 +38,37 @@
     }
     &__img{
         width: 30rem;
+        height: 50rem;
     }
     &__text{
         position: absolute;
         font-size: 10rem;
-        font-weight: 400;
+        font-weight: 500;
         text-transform: uppercase;
         letter-spacing: 6rem;
         transition: all .5s;
         display: flex;
         &--1{
         text-shadow: 3px -1px 2px rgba(0,0,0,0.34);
-            top: 6rem;
+            top: 8rem;
             z-index: 200;
-            font-style: italic;
+            &-test{
+                top: 25%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 30rem;
+                &--design{
+                  font-size: 20rem !important;
+                }
+                &--me{
+                     letter-spacing: 1rem;
+                     font-size: 10rem !important;
+                  }
+            }
         }
         &--2{
             bottom: 10rem;
+            text-align: center;
             &-test{
                 top: 50%;
                 left: 50%;
@@ -63,7 +77,13 @@
                 &--design{
                   font-size: 20rem !important;
                 }
+                &--me{
+                      bottom: 10%;
+                     letter-spacing: 1rem;
+                     font-size: 20rem !important;
+                  }
             }
+            
         }
     }
 }
