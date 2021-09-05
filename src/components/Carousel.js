@@ -10,6 +10,7 @@ import { ThemeContext } from '../contexts/ThemeContext';
 import AboutHeader from './headers/AboutHeader';
 import DesignHeader from './headers/DesignHeader';
 import DevHeader from './headers/DevHeader';
+import Navbar from './Navbar';
 
 
 const CarouselComp = () => {
@@ -103,6 +104,7 @@ const CarouselComp = () => {
         </Carousel>
         {textComp}
         <div className="scroll-container center-hrz--col">
+           <Navbar/>
           <p class="small-text" style={{color: theme.accent}}>Scroll for more</p>
           <button className="scroll-down"><i className="lni lni-chevron-down" style={{color: theme.accent}}></i></button>
           <div>

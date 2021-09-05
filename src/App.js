@@ -14,7 +14,6 @@ function App() {
 
   return (
     <div className="App" style={{backgroundColor: theme.background}}>
-      <Navbar/>
      <CarouselComp/>
      <button onClick={()=>{
                 console.log("ijoij")

@@ -3,7 +3,7 @@ import {useTransition, animation, animated, useTrail} from "react-spring"
 
 const AboutHeader = ({accent}) => {
     const [topWord, setTopWord] = useState(["D", "O", "U", "G", "L", "A", "S"]);
-    const [bottomWord, setBottomWord] = useState([ "M", "A", "S", "H", "O"]);
+    const [bottomWord, setBottomWord] = useState([ "M", "A", "S", "H", "O", "."]);
 
     const transition = useTransition(topWord, {
         from: { opacity: 0, marginLeft:  -100, marginRight: 100, },
@@ -14,12 +14,12 @@ const AboutHeader = ({accent}) => {
 
     const springs1 = useTrail(7, {
         from: { opacity: 0, marginLeft:  -100, marginRight: 100},
-        to: { opacity: 1 , marginLeft: 0, marginRight: 0,},
+        to: { opacity: 1 , marginLeft: 0, marginRight: 0},
         config: { tension: 250},
       });
 
     const springs = useTrail(7, {
-        from: { opacity: 0, marginLeft:  100, marginRight: -100, scale: 0.5},
+        from: { opacity: 0, marginLeft:  100, marginRight: -100},
         to: { opacity: 1 , marginLeft: 0, marginRight: 0,  scale: 1},
         config: { tension: 200},
       });

@@ -76,11 +76,14 @@
                 font-size: 30rem;
                 &--design{
                   font-size: 20rem !important;
+                  @include respond(tab-port){
+                      font-size: 15rem !important
+                  }
                 }
                 &--me{
                       bottom: 10%;
                      letter-spacing: 1rem;
-                     font-size: 20rem !important;
+                     font-size: 25rem !important;
                   }
             }
             
