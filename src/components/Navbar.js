@@ -18,24 +18,35 @@ const Navbar = () => {
     useEffect(()=>{
         switch(theme.value){
             case 0: 
-               linkOneRef.current.style.textDecoration = "underline";
-               linkTwoRef.current.style.textDecoration = "none";
-               linkThreeRef.current.style.textDecoration = "none";
+            //    linkOneRef.current.style.backgroundColor = "white";
+               linkTwoRef.current.style.backgroundColor = "transparent";
+               linkThreeRef.current.style.backgroundColor = "transparent";
+
+               linkOneRef.current.style.color = theme.accent;
+               linkTwoRef.current.style.color = "white";
+               linkThreeRef.current.style.color = "white";
                break;
             case 1: 
-            linkOneRef.current.style.textDecoration = "none";
-            linkTwoRef.current.style.textDecoration = "underline";
-            linkThreeRef.current.style.textDecoration = "none";
+            linkOneRef.current.style.backgroundColor = "transparent";
+            // linkTwoRef.current.style.backgroundColor = "white";
+            linkThreeRef.current.style.backgroundColor = "transparent";
+
+            linkOneRef.current.style.color = "white";
+            linkTwoRef.current.style.color = theme.accent;
+            linkThreeRef.current.style.color = "white";
                break;
             case 2: 
-               linkOneRef.current.style.textDecoration = "none";
-               linkTwoRef.current.style.textDecoration = "none";
-               linkThreeRef.current.style.textDecoration = "underline";
+               linkOneRef.current.style.backgroundColor = "transparent";
+               linkTwoRef.current.style.backgroundColor = "transparent";
+            //    linkThreeRef.current.style.backgroundColor = "white";
+
+               linkOneRef.current.style.color = "white";
+               linkTwoRef.current.style.color = "white";
+               linkThreeRef.current.style.color = theme.accent;
                break;
         }
     })
     
-
     return (
         <div className="navbar" style={{backgroundColor: theme.background}}>
             <Link to="/design" ref={linkOneRef} className="navbar__link" onClick={()=>{
@@ -47,8 +58,7 @@ const Navbar = () => {
             <Link to="/dev" ref={linkThreeRef} className="navbar__link" onClick={()=>{
                 setSlide(2)
             }}>Dev</Link>
-
-
+            <a href="#" className="navbar__link" id="navbar__contact">Contact</a>
         </div>
     )
 }

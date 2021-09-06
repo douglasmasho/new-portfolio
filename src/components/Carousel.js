@@ -11,6 +11,14 @@ import AboutHeader from './headers/AboutHeader';
 import DesignHeader from './headers/DesignHeader';
 import DevHeader from './headers/DevHeader';
 import Navbar from './Navbar';
+import {Route} from "react-router-dom"
+import About from './Info/About';
+import Dev from './Info/Dev';
+import Design from './Info/Design';
+
+
+
+
 
 
 const CarouselComp = () => {
@@ -78,40 +86,34 @@ const CarouselComp = () => {
        break;
   }
     return (
+      <>
         <div className="center-hrz--col" style={{position: "relative"}}>
         <Carousel className=" carousel__container center-hrz"
         value={theme.value}
         onChange={setTheme}
         animationSpeed ={800}
-            plugins={[
-                {
-                  resolve: arrowsPlugin,
-                  options: {
-                    arrowLeft: <button className="carousel__arrow"><i className="lni lni-chevron-left" style={{color: theme.accent, display: displayPropLeft}}></i></button>,
-                    arrowLeftDisabled:<button className="carousel__arrow"><i className="lni lni-chevron-left" style={{color: theme.accent, display: displayPropLeft}}></i></button>,
-                    arrowRight: <button className="carousel__arrow"><i className="lni lni-chevron-right" style={{color: theme.accent, display: displayPropRight}}></i></button>,
-                    arrowRightDisabled: <button className="carousel__arrow"><i className="lni lni-chevron-right" style={{color: theme.accent, display: displayPropRight}}></i></button>,
-                    addArrowClickHandler: true,
-                  }
-                }
-              ]}
+
         >
 
-            <img className="carousel__img layer" data-speed="-1" src={ImageTwo}/>   
-            <img className="carousel__img layer" data-speed="-1" src={ImageOne}/>   
-            <img className="carousel__img layer" data-speed="-1" src={ImageThree}/>   
+            <img className="carousel__img layer" data-speed="-2" src={ImageTwo}/>   
+            <img className="carousel__img layer" data-speed="-2" src={ImageOne}/>   
+            <img className="carousel__img layer" data-speed="-2" src={ImageThree}/>   
             
         </Carousel>
         {textComp}
+        <Navbar/>
         <div className="scroll-container center-hrz--col">
-           <Navbar/>
           <p class="small-text" style={{color: theme.accent}}>Scroll for more</p>
           <button className="scroll-down"><i className="lni lni-chevron-down" style={{color: theme.accent}}></i></button>
-          <div>
-
-          </div>
         </div>
         </div>
+        <div>
+        <Route component={About} exact path="/about"/>
+        <Route component={About} exact path="/"/>
+        <Route component={Dev} exact path="/dev"/>
+        <Route component={Design} exact path="/design"/>
+        </div>
+        </>
     )
 }
 

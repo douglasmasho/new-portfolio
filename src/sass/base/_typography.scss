@@ -25,6 +25,9 @@ body{
 
 .small-text{
     font-size: 1.3rem !important;
+    @include respond(phone){
+        font-size: 2rem !important;
+        }
 }
 .normal-text{
     font-size: 1.5rem;

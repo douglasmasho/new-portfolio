@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
-import {useTransition, animation, animated, useTrail} from "react-spring"
+import {useTransition, animation, animated, useTrail} from "react-spring";
+
 
 const AboutHeader = ({accent}) => {
     const [topWord, setTopWord] = useState(["D", "O", "U", "G", "L", "A", "S"]);
@@ -30,12 +31,12 @@ const AboutHeader = ({accent}) => {
         <h1 className="carousel__text carousel__text--1-test carousel__text--1-test--me" style={{color: accent}}>
             
               {springs1.map((style, index)=>{
-                  return <animated.div className="layer" data-speed="5" style={style} key={index}>{topWord[index]}</animated.div>
+                  return <animated.div data-speed="5" style={style} key={index}>{topWord[index]}</animated.div>
               })}
           </h1>
         <h1 className="carousel__text carousel__text--2-test carousel__text--2-test--me"   style={{color: accent}}>
               {springs.map((style, index)=>{
-                  return <animated.div className="layer" data-speed="-2" style={style} key={index}>{bottomWord[index]}</animated.div>
+                  return <animated.div  data-speed="-2" style={style} key={index}>{bottomWord[index]}</animated.div>
               })}
           </h1>
         </div>

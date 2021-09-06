@@ -1,0 +1,24 @@
+.social{
+    &__container{
+        display: flex;
+        justify-content: space-evenly;
+        width: 70%;
+    }
+    &__link{
+        font-size: 3rem;
+        transition: all .3s;
+        @include respond(phone){
+        font-size: 5rem;
+        }
+        &:hover{
+            color: white !important;
+        }
+        // &:not(:last-child){
+        //     margin-right: 5rem;
+        // }
+    }
+}
+
+#quick-links{
+    padding: 3rem 1rem;
+}
