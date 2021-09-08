@@ -16,7 +16,7 @@ const AboutHeader = ({accent}) => {
     const springs1 = useTrail(7, {
         from: { opacity: 0, marginLeft:  -100, marginRight: 100},
         to: { opacity: 1 , marginLeft: 0, marginRight: 0},
-        config: { tension: 250},
+        config: { tension: 180},
       });
 
     const springs = useTrail(7, {

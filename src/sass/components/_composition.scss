@@ -1,0 +1,52 @@
+.composition{
+   &__bg{
+       width: 30%;
+       height: 100vh;
+       position: relative;
+       @include respond(phone){
+       height: 90vh;
+       position: relative;
+       }
+   }
+
+   &__element{
+     //  position: absolute;
+       background-size: cover;
+       width: 25rem;
+       height: 35rem;
+       left: -5rem;
+       top: 5rem;
+       justify-content: space-between;
+       width: 80vw;
+
+       @include respond(phone){
+           align-items: center;
+       }
+   }
+
+   &__image{
+       width: 25rem;
+   }
+
+   &__text{
+       width: 50%;
+       background-color: white;
+       padding: 1rem;
+       margin-left: 2rem;
+       
+       @include respond(phone){
+        width: 100%;
+    }
+    
+   }
+
+   &__header{
+    padding: 1rem;
+    margin-left: 2rem;
+    background-color: white;
+    @include respond(phone){
+        margin-top: 2rem;
+       }
+
+   }
+}
