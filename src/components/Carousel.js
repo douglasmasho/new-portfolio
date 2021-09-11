@@ -92,7 +92,6 @@ const CarouselComp = () => {
         value={theme.value}
         onChange={setTheme}
         animationSpeed ={800}
-
         >
 
             <img className="carousel__img layer" data-speed="-2" src={ImageTwo}/>   

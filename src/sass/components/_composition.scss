@@ -1,41 +1,67 @@
 .composition{
+
    &__bg{
-       width: 30%;
-       height: 100vh;
-       position: relative;
-       @include respond(phone){
-       height: 90vh;
-       position: relative;
+       width: 500px;
+       height: 600px;
+       position: absolute;
+       border-radius: 10px;
+       @include respond(tab-port){
+       height: 1600px;
+       width: 100%;
+       }
+
+       &--about{
+       height: 900px;
+       @include respond(tab-port){
+        height: 2000px;
+        }
+        @include respond(phone){
+            height: 1150px
+        }
        }
    }
 
-   &__element{
-     //  position: absolute;
-       background-size: cover;
-       width: 25rem;
-       height: 35rem;
-       left: -5rem;
-       top: 5rem;
-       justify-content: space-between;
-       width: 80vw;
+   &__container{
+       position: relative;
+       z-index: 100;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
 
-       @include respond(phone){
-           align-items: center;
+   &__infoContainer{
+       width: 50%;
+       @include respond(tab-port){
+        width: 100%;
+        padding: 1rem;
+    }
+   }
+
+   &__element{
+       display: flex;
+       justify-content: space-evenly;
+       width: 80vw;
+       align-items: center;
+
+       @include respond(tab-port){
        }
    }
 
    &__image{
        width: 25rem;
+       @include respond(tab-port){
+       width: 50rem;
+       }
+       border-radius: 10px;
    }
 
    &__text{
-       width: 50%;
-       background-color: white;
        padding: 1rem;
        margin-left: 2rem;
-       
-       @include respond(phone){
+       text-align: justify;
+       @include respond(tab-port){
         width: 100%;
+        padding: 1rem;
     }
     
    }
@@ -43,9 +69,20 @@
    &__header{
     padding: 1rem;
     margin-left: 2rem;
-    background-color: white;
-    @include respond(phone){
-        margin-top: 2rem;
+    display: inline-block;
+    font-size: 4rem;
+    color: white;
+    letter-spacing: 10px;
+    @include respond(tab-port){
+    color: white !important;
+    }
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    @include respond(tab-port){
+        margin-top: 3rem;
+        font-size: 6rem;
+        display: block;
+        text-align: center;
        }
 
    }

@@ -9,6 +9,7 @@
 html{
   scroll-behavior: smooth;
     font-size: 62.5%;
+    box-sizing: border-box;
 
     @include respond(tab-land){
         font-size: 56.25%;                      //1rem = 9px , 9/16  56.25%        
@@ -68,4 +69,18 @@ html{
   background-color: white;
   width: 100%;
   // padding: 2rem 3rem;
+}
+
+.for-phone{
+  display: none;
+  @include respond(phone){
+    display: block;
+  }
+}
+
+.for-desktop{
+
+  @include respond(phone){
+    display: none;
+  }
 }

@@ -20,7 +20,6 @@ function App() {
     <div className="App" style={{backgroundColor: theme.background}} ref={appRef}>
      <CarouselComp/>
      <ScrollToTop scrollToTop={scrollToTop}/>
-     <button style={{position:"fixed", zIndex: "9000000", top: 0}} onClick={scrollToTop}>scrolltotop</button>
     </div>
   );
 }

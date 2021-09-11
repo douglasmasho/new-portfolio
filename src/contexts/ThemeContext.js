@@ -17,6 +17,7 @@ const ThemeContextProvider = (props) => {
       accent: "#96ffca",
       textColor: "#fff",
       background: "#1544C0",
+      lightBackground: "#9cb9ff",
       value: 1,
       id: "about",
     },
@@ -33,7 +34,9 @@ const ThemeContextProvider = (props) => {
   const [theme, setTheme] = useState(themes[1]);
 
   const setThemeFunc = (val) => {
-    setTheme(themes[val]);
+    if(val || val === 0){
+      setTheme(themes[val]);
+    }
   };
 
   useEffect(() => {

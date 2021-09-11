@@ -7,6 +7,9 @@ body{
 
 .header-text{
     font-size: 4rem;
+    @include respond(phone){
+    font-size: 8rem;
+    }
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 10px;

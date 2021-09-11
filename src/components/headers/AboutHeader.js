@@ -25,20 +25,50 @@ const AboutHeader = ({accent}) => {
         config: { tension: 200},
       });
 
+      const springs1p = useTrail(7, {
+        from: { opacity: 0},
+        to: { opacity: 1},
+        config: { tension: 180},
+      });
+
+    const springsp = useTrail(7, {
+        from: { opacity: 0,},
+        to: { opacity: 1 },
+        config: { tension: 200},
+      });
+
     return (
         <>
         <div data-speed="10">
-        <h1 className="carousel__text carousel__text--1-test carousel__text--1-test--me" style={{color: accent}}>
+            <div className="for-desktop">
+            <h1 className="carousel__text carousel__text--1-test carousel__text--1-test--me" style={{color: accent}}>
             
-              {springs1.map((style, index)=>{
-                  return <animated.div data-speed="5" style={style} key={index}>{topWord[index]}</animated.div>
-              })}
-          </h1>
-        <h1 className="carousel__text carousel__text--2-test carousel__text--2-test--me"   style={{color: accent}}>
-              {springs.map((style, index)=>{
-                  return <animated.div  data-speed="-2" style={style} key={index}>{bottomWord[index]}</animated.div>
-              })}
-          </h1>
+            {springs1.map((style, index)=>{
+                return <animated.div data-speed="5" style={style} key={index}>{topWord[index]}</animated.div>
+            })}
+        </h1>
+      <h1 className="carousel__text carousel__text--2-test carousel__text--2-test--me"   style={{color: accent}}>
+            {springs.map((style, index)=>{
+                return <animated.div  data-speed="-2" style={style} key={index}>{bottomWord[index]}</animated.div>
+            })}
+        </h1>
+            </div>
+
+            <div className="for-phone">
+            <h1 className="carousel__text carousel__text--1-test carousel__text--1-test--me" style={{color: accent}}>
+            
+            {springs1p.map((style, index)=>{
+                return <animated.div data-speed="5" style={style} key={index}>{topWord[index]}</animated.div>
+            })}
+        </h1>
+      <h1 className="carousel__text carousel__text--2-test carousel__text--2-test--me"   style={{color: accent}}>
+            {springsp.map((style, index)=>{
+                return <animated.div  data-speed="-2" style={style} key={index}>{bottomWord[index]}</animated.div>
+            })}
+        </h1>
+
+            </div>
+       
         </div>
 
 

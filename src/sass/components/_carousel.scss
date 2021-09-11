@@ -84,7 +84,10 @@
                 &--me{
                       bottom: 10%;
                      letter-spacing: 1rem;
-                     font-size: 25rem !important;
+                     font-size: 20rem;
+                     @include respond(tab-port){
+                     font-size: 10rem !important;
+                     }
                   }
             }
             
