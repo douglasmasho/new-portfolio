@@ -12,6 +12,9 @@
 
        &--about{
        height: 900px;
+       @include respond(tab-land){
+        height: 800px;
+        }
        @include respond(tab-port){
         height: 2000px;
         }
@@ -54,6 +57,8 @@
        }
        border-radius: 10px;
    }
+
+
 
    &__text{
        padding: 1rem;

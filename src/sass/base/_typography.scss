@@ -72,3 +72,15 @@ body{
 .justify-text{
     text-align: justify;
 }
+
+.light-text{
+    &-1{
+        font-weight: 300;
+    }
+    &-2{
+        font-weight: 200;
+    }
+    &-3{
+        font-weight: 100;
+    }
+}
