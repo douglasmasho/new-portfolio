@@ -84,3 +84,15 @@ body{
         font-weight: 100;
     }
 }
+
+.sub-heading{
+    padding: 6px 10px;
+    font-size: 2rem;
+
+    @include respond(tab-port){
+        font-size: 4rem;
+     }
+    @include respond(phone){
+        font-size: 4rem;  
+      }
+}

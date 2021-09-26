@@ -90,14 +90,14 @@ const About = (props) => {
              <img id="c1" src={MeMos} alt="" className="composition__image" data-aos="zoom-out" data-aos-duration="800"/>
              <div id="ic1" className="composition__infoContainer">
               <h1 className="composition__header" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">Who <br />I am</h1>
-              <p id="ct1" className="composition__text bigger-text" data-aos="fade-down" data-aos-delay="300" data-aos-duration="800">My name is Douglas Mashonganyika. I'm an aspiring front-end developer who is detail-oriented and has a passion for problem-solving. My love for mathematics got me interested in web development and programming in general.</p>
+              <p id="ct1" className="composition__text bigger-text" data-aos="fade" data-aos-delay="300" data-aos-duration="800">My name is Douglas Mashonganyika. I'm an aspiring front-end developer who is detail-oriented and has a passion for problem-solving. My love for mathematics got me interested in web development and programming in general.</p>
              </div>       
             </div>
           
             <div className="row composition__element composition__element--2">
              <div id="ic2" className="composition__infoContainer">
               <h1  className="composition__header" style={{color: theme.background}} data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">What <br />I do</h1>
-              <p id="ct2" className="composition__text bigger-text" data-aos="fade-down" data-aos-delay="300" data-aos-duration="800">I do frontend web development with some backend in the mix. Apart from development, I work with UI/UX designs and prototypes in Adobe XD and Figma, and illustrations in Adobe illustrator.</p>
+              <p id="ct2" className="composition__text bigger-text" data-aos="fade" data-aos-delay="300" data-aos-duration="800">I do frontend web development with some backend in the mix. Apart from development, I work with UI/UX designs and prototypes in Adobe XD and Figma, and illustrations in Adobe illustrator.</p>
              </div>    
             <img src={WhatIDo} alt="" className="composition__image" id="ci2" data-aos="zoom-out" data-aos-duration="800"/>
 
@@ -112,7 +112,7 @@ const About = (props) => {
            <div className="education__logoContainer" style={{ backgroundColor: theme.lightBackground }} data-aos="zoom-out" data-aos-delay="300" data-aos-duration="800">
              <img src={UnamLogo} alt="unam logo" data-aos="zoom-out" data-aos-delay="500" data-aos-duration="800"/>
              <div className="center-hrz">
-             <p className="bigger-text u-margin-top" data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="800">University of namibia</p>
+             <p className="bigger-text u-margin-top" data-aos="zoom-in" data-aos-delay="800" data-aos-duration="800">University of namibia</p>
              </div>
            </div>
            <div className="education__infoContainer" data-aos="fade-left" data-aos-delay="800" data-aos-duration="800">
