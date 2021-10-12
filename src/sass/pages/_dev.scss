@@ -1,3 +1,24 @@
 .dev{
     
 }
+
+.skills-list{
+    list-style: none;
+
+    & li{
+        text-align: center;
+        & p{
+            color: white;
+        }
+        & i{
+            font-size: 7rem;
+        }
+
+        & img{
+            width: 7rem;
+
+        }
+    }
+
+
+}
