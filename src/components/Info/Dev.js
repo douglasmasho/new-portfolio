@@ -12,6 +12,8 @@ import { devData } from './projectsdata';
 import DevProject from './DevProject';
 import { timelineData } from './timelinedata';
 import TimeLineItem from './TimelineItem';
+import { freelancearr } from './freelancedata';
+import FreelanceProject from './FreelanceProject';
 
 const Dev = () => {
     const { theme} = useContext(ThemeContext);
@@ -119,11 +121,17 @@ const Dev = () => {
             }
             </section>
 
-            <section id="freelance work">
-                <div className="grid grid-2">
-                    <div className="grid-2--child">
-                        {/* <img src="" alt="" /> */}
-                    </div>
+            <section id="freelance work" style={{padding: "10rem"}}>
+                <div className="center-hrz u-margin-bottom">
+                    <h3 className="header-text" style={{color: theme.accent}} data-aos="zoom-out">Freelance work</h3>
+                </div>
+
+                <div>
+                    {
+                        freelancearr.map(project=>(
+                            <FreelanceProject project={project}/>
+                        ))
+                    }
                 </div>
             </section>
 
