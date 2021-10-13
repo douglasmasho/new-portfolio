@@ -59,6 +59,7 @@
         &__position{
             color: white;
             font-size: 2rem;
+            margin-top: 10px;
         }
         &__time{
             color: white;
@@ -69,6 +70,7 @@
         &__description{
             font-size: 1.8rem;
             font-weight: 300;
+            margin-top: 20px;
         }
 
         &__list{
@@ -86,9 +88,10 @@
         &:hover &__overlay{
             opacity: 1;
         }
+
         &__overlay{
             background-color: rgba(0, 0, 0, 0.616);
-            backdrop-filter: blur(4px);
+            backdrop-filter:  blur(4px) saturate(0);
             border-radius: 10px;
             width: 100%;
             height: 100%;
