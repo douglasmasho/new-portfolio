@@ -8,7 +8,7 @@ const FreelanceProject = ({project}) => {
     return (
     <div className="timeline-container timeline-container--reverse">
         <div className="timeline-item">
-        <div className="timeline-item__thumb" data-aos="zoom-out" data-aos-delay="400" data-aos-duration="500">
+            <div className="timeline-item__thumb" data-aos="zoom-out" data-aos-delay="400" data-aos-duration="500">
                 <div className="timeline-item__thumb__overlay">
                     <a href={project.link} target="_blank"><i className="icon fas fa-eye" title="Demo"></i></a>
                 </div>

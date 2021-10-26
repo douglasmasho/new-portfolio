@@ -6,7 +6,7 @@ const ThemeContextProvider = (props) => {
   const location = useLocation();
   const themes = [
     {
-      accent: "#DB00FF",
+      accent: "#fd73ff",
       textColor: "#fff",
       background: "#250e8f",
       value: 0,
