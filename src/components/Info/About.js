@@ -22,7 +22,11 @@ const About = (props) => {
   }, []);
   const { theme, setTheme } = useContext(ThemeContext);
   let t1 = new TimelineLite();
-
+  
+  const setSlide = (val)=>{
+    setTheme(val);
+  }
+  
   useEffect(()=>{
     // t1.from("", {
     //   x: -15,
@@ -125,6 +129,35 @@ const About = (props) => {
          </div>
       </div>
     </section>
+
+    <section>
+      <div className="center-hrz">
+        <div className="detour row" data-aos="fade">
+           
+              <div className="detour--1">
+                  <i className="fas fa-paint-brush detour__icon"></i>
+              <Link to="/design" onClick={()=>{setSlide(0)}}>
+
+                  <div className="detour__description"><i className="fas fa-chevron-left "></i>Design</div>
+                  </Link>
+            </div>
+            
+                <div className="detour--2">
+
+                  <i className="fas fa-code detour__icon"></i>
+            <Link to="/dev"   onClick={()=>{setSlide(2)}}>
+
+                  <div className="detour__description">Dev<i className="fas fa-chevron-right"></i></div>
+            </Link>
+
+              </div>
+              
+
+        </div>
+      </div>
+
+    </section>
+    
     </div>
   );
 };

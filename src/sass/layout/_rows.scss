@@ -1,6 +1,5 @@
 .row{
     display: flex;
-    padding: 1rem 0.5rem;
 
     @include respond(tab-port){
         flex-direction: column;

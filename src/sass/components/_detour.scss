@@ -1,0 +1,52 @@
+.detour{
+    width: 90vw;
+    margin: 1rem;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 1px 1px 27px 2px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 1px 1px 27px 2px rgba(0,0,0,0.1);
+    -moz-box-shadow: 1px 1px 27px 2px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    &--1,&--2{
+    position: relative;
+        color: black;
+        transition: all .5s;
+        width: 50%;
+        @include respond(tab-port){
+        width: 100%;
+        }
+        padding: 5rem 2rem;
+        &:hover .detour__description{
+            opacity: 0.5;
+            letter-spacing: 10px;
+        }
+    }
+    &--1{
+        background-color: #250e8f;
+        &:hover{
+            color: #fd73ff;
+            background-color: black;
+        }
+
+    }
+    &--2{
+        background-color: #212121;
+        &:hover{
+            color: #fff55a;
+            background-color: black;
+        }
+    }
+
+    &__icon{
+        font-size: 10rem;
+    }
+
+    &__description{
+        color: white;
+        font-size: 5rem;
+        @include center;
+        transition: all .5s;
+    }
+}
