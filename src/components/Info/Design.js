@@ -47,12 +47,15 @@ const Desing = () => {
           </section>
 
 
-          <section id="desing-stack"  className="u-margin-top-big">
+          <section id="desing-stack"  className="u-margin-top-big u-padding-bottom">
                 <div className="center-hrz u-margin-bottom">
                     <h3 className="header-text" style={{color: theme.accent}} data-aos="zoom-out">Gallery</h3>
                 </div>
 
-                <GalleryItem/>
+                 <div data-aos="fade-in">
+                   <GalleryItem />
+                    
+                 </div>
                 
           </section>
         </div>
