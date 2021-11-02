@@ -3,7 +3,7 @@ import { useTransition, animation, animated, useTrail } from 'react-spring'
 
 const DesignHeader = ({accent}) => {
     const [topWord, setTopWord] = useState(["I ", "D", "O"]);
-    const [bottomWord, setBottomWord] = useState(["D", "E", "S", "I", "G", "N", "."]);
+    const [bottomWord, setBottomWord] = useState(["D", "E", "S", "I", "G", "N"]);
 
     const transition = useTransition(topWord, {
         from: { opacity: 0, marginLeft:  100, marginRight: -100},

@@ -26,19 +26,19 @@ const Desing = () => {
                 <ul className="grid grid-4 skills-list" style={{color: theme.accent}}>
 
                     <li>
-                    <img src={AIicon} alt="c# icon" className="grid-4--child" data-aos="fade-left" data-aos-delay="0"  data-aos-duration="700"/>
+                    <img src={AIicon} alt="c# icon" className="grid-4--child" data-aos="fade-right" data-aos-delay="0"  data-aos-duration="700"/>
                         <p className="normal-text">Illustrator</p>
                     </li>
                     <li>
-                        <img src={Xdicon} alt="c# icon" className="grid-4--child" data-aos="fade-left" data-aos-delay="100"  data-aos-duration="700"/>
+                        <img src={Xdicon} alt="c# icon" className="grid-4--child" data-aos="fade-right" data-aos-delay="100"  data-aos-duration="700"/>
                         <p className="normal-text">XD</p>
                     </li>
                     <li>
-                        <img src={PsIcon} alt="c# icon" className="grid-4--child" data-aos="fade-left" data-aos-delay="200"  data-aos-duration="700"/>
+                        <img src={PsIcon} alt="c# icon" className="grid-4--child" data-aos="fade-right" data-aos-delay="200"  data-aos-duration="700"/>
                         <p className="normal-text">Photoshop</p>
                     </li>
                     <li>
-                        <img src={Figmaicon} alt="c# icon" className="grid-4--child" data-aos="fade-left" data-aos-delay="300"  data-aos-duration="700"/>
+                        <img src={Figmaicon} alt="c# icon" className="grid-4--child" data-aos="fade-right" data-aos-delay="300"  data-aos-duration="700"/>
                         <p className="normal-text">Figma</p>
                     </li>
                 </ul>

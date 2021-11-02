@@ -7,16 +7,24 @@
 
     & li{
         text-align: center;
+        @include respond(phone){
+            margin: 5rem;
+        }
         & p{
             color: white;
         }
         & i{
             font-size: 7rem;
+            @include respond(phone){
+                font-size: 10rem;
+            }
         }
 
         & img{
             width: 7rem;
-
+            @include respond(phone){
+                width: 10rem;
+            }
         }
     }
 
@@ -30,6 +38,11 @@
     @include respond(tab-port){
         background: rgb(45,45,45);
     background: linear-gradient(180deg, rgba(45,45,45,0) 0%, rgba(45,45,45,0) 70%, rgba(255,245,90,1) 70%, rgba(255,245,90,1) 100%);
+    margin-bottom: 10rem;
+    }
+    @include respond(phone){
+        margin-bottom: 15rem;
+    background: linear-gradient(180deg, rgba(45,45,45,0) 0%, rgba(45,45,45,0) 80%, rgba(255,245,90,1) 80%, rgba(255,245,90,1) 100%);
     }
     padding: 5rem 3rem;
     &--reverse{
@@ -75,37 +88,61 @@
 
         &__name{
             font-size: 4rem;
+            @include respond(tab-port){
+                font-size: 6rem;
+            }
         }
 
         &__position{
             color: white;
             font-size: 2rem;
             margin-top: 10px;
+            @include respond(tab-port){
+                font-size: 4rem;
+            }
         }
         &__time{
             color: white;
             font-size: 1.8rem;
             margin-top: 10px;
+            margin-top: 20px;
+            @include respond(tab-port){
+                font-size: 4rem;
+            }
         }
 
         &__description{
             font-size: 1.8rem;
             font-weight: 300;
             margin-top: 20px;
+            @include respond(tab-port){
+                font-size: 4rem;
+            }
+            @include respond(phone){
+                text-align: justify;
+            }
+            
         }
 
         &__list{
             list-style: none;
             font-size: 2rem;
             color: white;
+            @include respond(tab-port){
+                font-size: 4rem;
+            }
             & li:not(:last-child){
             margin-bottom: 1rem;
+
         }
         }
     }
     &__thumb{
         text-align: center;
         position: relative;
+        @include respond(phone){
+            margin-bottom: 2rem
+        }
         &:hover &__overlay{
             opacity: 1;
         }

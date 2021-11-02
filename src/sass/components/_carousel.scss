@@ -57,6 +57,9 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
                 font-size: 30rem;
+                @include respond(phone){
+                    font-size: 10rem;
+                }
                 &--design{
                   font-size: 20rem !important;
                 }
@@ -70,16 +73,24 @@
             bottom: 10rem;
             text-align: center;
             &-test{
-                top: 50%;
+                top: 30%;
                 left: 50%;
-                transform: translate(-50%, -50%);
+                transform: translate(-50%);
                 font-size: 30rem;
+                @include respond(phone){
+                    font-size: 20rem;
+                }
                 &--design{
                   letter-spacing: 4rem;
                   font-size: 20rem !important;
                   @include respond(tab-port){
                       font-size: 15rem !important
                   }
+                  @include respond(phone){
+                    font-size: 15rem !important;
+                  letter-spacing: 1rem;
+
+                }
                 }
                 &--me{
                       bottom: 10%;

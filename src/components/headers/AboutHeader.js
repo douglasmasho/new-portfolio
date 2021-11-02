@@ -4,7 +4,7 @@ import {useTransition, animation, animated, useTrail} from "react-spring";
 
 const AboutHeader = ({accent}) => {
     const [topWord, setTopWord] = useState(["D", "O", "U", "G", "L", "A", "S"]);
-    const [bottomWord, setBottomWord] = useState([ "M", "A", "S", "H", "O", "."]);
+    const [bottomWord, setBottomWord] = useState([ "M", "A", "S", "H", "O"]);
 
     const transition = useTransition(topWord, {
         from: { opacity: 0, marginLeft:  -100, marginRight: 100, },
@@ -39,7 +39,7 @@ const AboutHeader = ({accent}) => {
 
     return (
         <>
-        <div data-speed="10">
+        <div data-speed="10" style={{overflow: "hidden"}}>
             <div className="for-desktop">
             <h1 className="carousel__text carousel__text--1-test carousel__text--1-test--me" style={{color: accent}}>
             

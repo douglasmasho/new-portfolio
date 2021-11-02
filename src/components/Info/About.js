@@ -1,7 +1,7 @@
 import React, { useContext , useEffect} from "react";
 import { ThemeContext } from "../../contexts/ThemeContext";
 import PDF from "../../downloads/mycv.pdf";
-import {Link} from "react-router-dom";
+import {Link, useHistory} from "react-router-dom";
 import  fileDownload from "js-file-download";
 import axios from "axios";
 import { TimelineLite, gsap, Power3, Power2 } from "gsap";
@@ -16,6 +16,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 const About = (props) => {
+  const history = useHistory();
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -51,6 +52,20 @@ const About = (props) => {
 
  
   },[])
+
+  const goToPage = (type)=>{
+    switch(type){
+      case "DEV": 
+        setSlide(0);
+         history.push("/dev");
+         break;
+      case "DESIGN": 
+      setSlide(1);
+         history.push("/design");
+         break;
+      default: 
+    }
+  }
 
   return (
     <div className="page">
@@ -119,7 +134,7 @@ const About = (props) => {
              <p className="bigger-text u-margin-top" data-aos="zoom-in" data-aos-delay="800" data-aos-duration="800">University of namibia</p>
              </div>
            </div>
-           <div className="education__infoContainer" data-aos="fade-left" data-aos-delay="800" data-aos-duration="800">
+           <div className="education__infoContainer" data-aos="fade-in" data-aos-delay="800" data-aos-duration="800">
               <h2>Bachelor of Science Hons. </h2>
               <p className="bigger-text light-text-1">Computer Science</p>
               <br />
@@ -134,21 +149,18 @@ const About = (props) => {
       <div className="center-hrz">
         <div className="detour row" data-aos="fade">
            
-              <div className="detour--1">
+               <div className="detour--1" onClick={()=>{goToPage("DESIGN")}}>
                   <i className="fas fa-paint-brush detour__icon"></i>
-              <Link to="/design" onClick={()=>{setSlide(0)}}>
-
+                 
                   <div className="detour__description"><i className="fas fa-chevron-left "></i>Design</div>
-                  </Link>
-            </div>
+                 
+              </div>
             
-                <div className="detour--2">
-
+                <div className="detour--2" onClick={()=>{goToPage("DEV")}}>
                   <i className="fas fa-code detour__icon"></i>
-            <Link to="/dev"   onClick={()=>{setSlide(2)}}>
-
+               
                   <div className="detour__description">Dev<i className="fas fa-chevron-right"></i></div>
-            </Link>
+               
 
               </div>
               
