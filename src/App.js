@@ -6,6 +6,7 @@ import "./sass/main.scss";
 import { ThemeContext } from './contexts/ThemeContext';
 import Navbar from 'components/Navbar';
 import ScrollToTop from 'functionality/ScrollToTop';
+import Footer from 'components/Footer';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
   return (
     <div className="App" style={{backgroundColor: theme.background}} ref={appRef}>
      <CarouselComp/>
+     <Footer/>
      <ScrollToTop scrollToTop={scrollToTop}/>
     </div>
   );

@@ -152,10 +152,12 @@
             backdrop-filter:  blur(4px) saturate(0);
             border-radius: 10px;
             width: 100%;
+            @include respond(phone){
+                width: 115%;
+            }
             height: 100%;
             position: absolute;
-            top:0;
-            left: 0;
+            @include center;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
@@ -164,6 +166,9 @@
             & a{
                 & i{
                     font-size: 6rem;
+                    @include respond(phone){
+                    font-size: 8rem;
+                    }
                     color: inherit;
                     color: #fff55a;
                     transition: all .5s;
