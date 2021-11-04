@@ -1,10 +1,17 @@
-import React, {useContext} from 'react';
+import React, {useContext, useEffect} from 'react';
 import { useHistory } from 'react-router';
 import { ThemeContext } from "../contexts/ThemeContext";
-
+import Arc from "../assets/arc.svg";
+import AOS from 'aos';
+import "aos/dist/aos.css";
 const Footer = () => {
     const history = useHistory();
   const { theme, setTheme } = useContext(ThemeContext);
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
 
     const setSlide = (val)=>{
         setTheme(val);
@@ -63,6 +70,7 @@ const Footer = () => {
                </div>
 
             </div>
+            <img src={Arc} alt="arclogo" className="footer__logo" data-aos="fade-up" data-aos-delay="200" data-aos-duration="300" data-aos-easing="ease-in-out"/>
         </div>
         </section>
         
