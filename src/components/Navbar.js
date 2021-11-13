@@ -71,7 +71,7 @@ const Navbar = () => {
             <Link to="/dev" ref={linkThreeRef} className="navbar__link" onClick={()=>{
                 setSlide(2)
             }}>Dev</Link>
-            <a href="#" className="navbar__link" id="navbar__contact">Contact</a>
+            <a href="#footer" className="navbar__link u-margin-right" id="navbar__contact">Contact</a>
         </div>
     )
 }

@@ -68,7 +68,7 @@ const About = (props) => {
   }
 
   return (
-    <div className="page">
+    <div className="page" style={{backgroundColor: theme.background}}>
       <section id="quick-links" style={{ backgroundColor: theme.background }}>
           <div className="center-hrz">
  
@@ -96,27 +96,27 @@ const About = (props) => {
       </section>
     <section id="about-me" className="u-margin-top-big" >
       <div className="center-hrz u-margin-bottom">
-         <h3 className="header-text" data-aos="zoom-out">About Me</h3>
+         <h3 className="header-text white-text" data-aos="zoom-out">About Me</h3>
       </div>
 
       <div className="center-hrz">
-        <div  style={{ backgroundColor: theme.lightBackground }} className="composition__bg composition__bg--about">
+        <div  style={{ backgroundColor: "black", width: "100%" }} className="composition__bg composition__bg--about u-padding-top">
         </div>
       </div>
 
-      <div className="composition__container" >
+      <div className="composition__container u-padding-top">
             <div className="row composition__element composition__element--1 u-margin-bottom-big"> 
              <img id="c1" src={MeMos} alt="" className="composition__image" data-aos="zoom-out" data-aos-duration="800"/>
              <div id="ic1" className="composition__infoContainer">
               <h1 className="composition__header" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">Who <br />I am</h1>
-              <p id="ct1" className="composition__text bigger-text" data-aos="fade" data-aos-delay="300" data-aos-duration="800">My name is Douglas Mashonganyika. I'm an aspiring front-end developer who is detail-oriented and has a passion for problem-solving. My love for mathematics got me interested in web development and programming in general.</p>
+              <p id="ct1" className="composition__text bigger-text white-text" data-aos="fade" data-aos-delay="300" data-aos-duration="800">My name is Douglas Mashonganyika. I'm an aspiring front-end developer who is detail-oriented and has a passion for problem-solving. My love for mathematics got me interested in web development and programming in general.</p>
              </div>       
             </div>
           
             <div className="row composition__element composition__element--2">
              <div id="ic2" className="composition__infoContainer">
-              <h1  className="composition__header" style={{color: theme.background}} data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">What <br />I do</h1>
-              <p id="ct2" className="composition__text bigger-text" data-aos="fade" data-aos-delay="300" data-aos-duration="800">I do frontend web development with some backend in the mix. Apart from development, I work with UI/UX designs and prototypes in Adobe XD and Figma, and illustrations in Adobe illustrator.</p>
+              <h1  className="composition__header white-text" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">What <br />I do</h1>
+              <p id="ct2" className="composition__text bigger-text white-text shadow-text" data-aos="fade" data-aos-delay="300" data-aos-duration="800">I do frontend web development with some backend in the mix. Apart from development, I work with UI/UX designs and prototypes in Adobe XD and Figma, and illustrations in Adobe illustrator.</p>
              </div>    
             <img src={WhatIDo} alt="" className="composition__image" id="ci2" data-aos="zoom-out" data-aos-duration="800"/>
 
@@ -128,13 +128,13 @@ const About = (props) => {
     <div className="center-hrz--col u-margin-bottom">
          <h3 className="header-text u-margin-bottom" data-aos="zoom-out" data-aos-delay="400">Education</h3>
          <div className="row education-container">
-           <div className="education__logoContainer" style={{ backgroundColor: theme.lightBackground }} data-aos="zoom-out" data-aos-delay="300" data-aos-duration="800">
+           <div className="education__logoContainer" style={{ backgroundColor: "black" }} data-aos="zoom-out" data-aos-delay="300" data-aos-duration="800">
              <img src={UnamLogo} alt="unam logo" data-aos="zoom-out" data-aos-delay="500" data-aos-duration="800"/>
              <div className="center-hrz">
-             <p className="bigger-text u-margin-top" data-aos="zoom-in" data-aos-delay="800" data-aos-duration="800">University of namibia</p>
+             <p className="bigger-text u-margin-top white-text" data-aos="zoom-in" data-aos-delay="800" data-aos-duration="800">University of namibia</p>
              </div>
            </div>
-           <div className="education__infoContainer" data-aos="fade-in" data-aos-delay="800" data-aos-duration="800">
+           <div className="education__infoContainer white-text" data-aos="fade-in" data-aos-delay="800" data-aos-duration="800">
               <h2>Bachelor of Science Hons. </h2>
               <p className="bigger-text light-text-1">Computer Science</p>
               <br />
@@ -145,10 +145,9 @@ const About = (props) => {
       </div>
     </section>
 
-    <section>
+    <section className="u-margin-bottom-big">
       <div className="center-hrz">
-        <div className="detour row" data-aos="fade">
-           
+        <div className="detour row" data-aos="fade">   
                <div className="detour--1" onClick={()=>{goToPage("DESIGN")}}>
                   <i className="fas fa-paint-brush detour__icon"></i>
                  

@@ -14,9 +14,9 @@ const ThemeContextProvider = (props) => {
     },
 
     {
-      accent: "#96ffca",
+      accent: "#fff",
       textColor: "#fff",
-      background: "#1544C0",
+      background: "#000",
       lightBackground: "#9cb9ff",
       value: 1,
       id: "about",

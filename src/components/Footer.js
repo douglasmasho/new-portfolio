@@ -4,10 +4,11 @@ import { ThemeContext } from "../contexts/ThemeContext";
 import Arc from "../assets/arc.svg";
 import AOS from 'aos';
 import "aos/dist/aos.css";
+import { getAnalytics, logEvent } from "firebase/analytics";
 const Footer = () => {
     const history = useHistory();
   const { theme, setTheme } = useContext(ThemeContext);
-
+  const analytics = getAnalytics();
     useEffect(() => {
         AOS.init();
         AOS.refresh();
@@ -31,6 +32,15 @@ const Footer = () => {
             default: 
         }
     }
+
+    const emailEvent = ()=>{
+        logEvent(analytics, "email-click", {name: "email_clicked"});
+        console.log("event logged");
+    }
+    const phoneEvent = ()=>{
+        logEvent(analytics, "phone-click", {name: "phone_clicked"});
+        console.log("event logged");
+    }
     return (
         <section id="footer">
            <div className="footer__container">
@@ -51,19 +61,19 @@ const Footer = () => {
                     <li>
                         <div className="contactInfo">
                             <h5 className="footer__list__header">Email 1</h5>
-                            <a href="mailto:dev@douglasmasho.ml" className="footer__list__link">dev@douglasmasho.ml</a>
+                            <a href="mailto:dev@douglasmasho.ml" className="footer__list__link" onClick={emailEvent}>dev@douglasmasho.ml</a>
                         </div>
                     </li> <br />
                     <li>
                        <div className="contactInfo">
                             <h5  className="footer__list__header">Email 2</h5>
-                            <a href="mailto:douglasmasho@gmail.com" className="footer__list__link">douglasmasho@gmail.com</a>
+                            <a href="mailto:douglasmasho@gmail.com" className="footer__list__link" onClick={emailEvent}>douglasmasho@gmail.com</a>
                         </div>
                     </li> <br />
                     <li>
                        <div className="contactInfo">
                             <h5  className="footer__list__header">Phone</h5>
-                            <a href="tel:(+264)81 474 7491" className="footer__list__link">(+264)81 474 7491</a>
+                            <a href="tel:(+264)81 625 6790" className="footer__list__link" onClick={phoneEvent}>(+264)81 625 6790</a>
                         </div>
                     </li> <br />
                 </ul>
