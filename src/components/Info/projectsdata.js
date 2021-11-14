@@ -63,23 +63,23 @@ export const devData = [
         gitlink: "https://github.com/douglasmasho/risit",
         demolink: "https://risit-d18a1.web.app"
     },
-    {
-        name: "Kronos",
-        tag: "Landing Page(also my very first project!)",
-        description: "Kronos is a landing page for a fictional Swedish watch maker.",
-        techlist: ["HTML5", "CSS3(SASS)","JQuery"],
-        imgsrc: Kronos,
-        gitlink: "https://github.com/douglasmasho/Kronos",
-        demolink: "https://kronos-watches.netlify.app"
-    },
-    {
-        name: "Athena",
-        tag: "Budget Calculator",
-        description: "A monthly budget calculator. Calculates in realtime the budget variance and the percentage that each expense takes from the monthly income.",
-        techlist: ["HTML5", "CSS3(SASS)", "JavaScript"],
-        imgsrc: Athena,
-        gitlink: "https://github.com/douglasmasho/athena-budget",
-        demolink: "https://athena-budget.netlify.app"
-    },
+    // {
+    //     name: "Kronos",
+    //     tag: "Landing Page(also my very first project!)",
+    //     description: "Kronos is a landing page for a fictional Swedish watch maker.",
+    //     techlist: ["HTML5", "CSS3(SASS)","JQuery"],
+    //     imgsrc: Kronos,
+    //     gitlink: "https://github.com/douglasmasho/Kronos",
+    //     demolink: "https://kronos-watches.netlify.app"
+    // },
+    // {
+    //     name: "Athena",
+    //     tag: "Budget Calculator",
+    //     description: "A monthly budget calculator. Calculates in realtime the budget variance and the percentage that each expense takes from the monthly income.",
+    //     techlist: ["HTML5", "CSS3(SASS)", "JavaScript"],
+    //     imgsrc: Athena,
+    //     gitlink: "https://github.com/douglasmasho/athena-budget",
+    //     demolink: "https://athena-budget.netlify.app"
+    // },
     
 ]
