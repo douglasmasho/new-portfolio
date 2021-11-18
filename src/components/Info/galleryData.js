@@ -16,9 +16,9 @@ import Ripple3 from "../../assets/design/ripple3.jpg";
 import See1 from "../../assets/design/see1.png";
 import See2 from "../../assets/design/see2.png";
 import See3 from "../../assets/design/see3.png";
-import Smokes1 from "../../assets/design/smokes1.png";
+import Smokes1 from "../../assets/design/smokes1.jpg";
 import Smokes2 from "../../assets/design/smokes2.jpg";
-import Smokes3 from "../../assets/design/smokes3.png";
+import Smokes3 from "../../assets/design/smokes3.jpg";
 
 
 

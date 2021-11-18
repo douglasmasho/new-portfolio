@@ -99,6 +99,9 @@ const Dev = () => {
                 <div style={{padding: "5rem"}}>
                 <codersrank-widget username="douglasmasho" class="widgett"  data-aos-duration="500"></codersrank-widget>
                 </div>
+                <div className="center-hrz" >
+                <codersrank-skills-chart username="douglasmasho" class="widgett"  data-aos-duration="500" style={{width: "80vw"}} labels="true" tooltip="true" legend="true" skills="Javascript, CSS, Scss, HTML, C#, JSON, TypeScript"></codersrank-skills-chart>
+                </div>
             </section>
 
             <section id="timeline" style={{padding: "10rem"}}>

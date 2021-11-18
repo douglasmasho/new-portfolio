@@ -1,6 +1,6 @@
 import DripFtwr from "./../../assets/dripftwr.jpg"
 import Tuterolive from "./../../assets/tuterolive.jpg";
-import Blabble from "./../../assets/blabblebg.png";
+import Blabble from "./../../assets/blabblebg.jpg";
 import Bugtray from "./../../assets/bugtray.jpg";
 import Foodle from "./../../assets/foodle.png";
 import Risit from "./../../assets/risit.png";
