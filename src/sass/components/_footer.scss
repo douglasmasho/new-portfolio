@@ -1,4 +1,6 @@
 .footer{
+
+    
     &__container{
         display: flex;
         justify-content: space-between;
@@ -45,7 +47,7 @@
             }
             @include respond(phone){
                 text-align: center;
-                font-size: 8rem;
+                font-size: 6rem;
                 margin-bottom: 5rem;
             }
         }
@@ -80,6 +82,7 @@
             @include respond(phone){
                 font-size: 5rem;
             }
+            
         }
         &__link{
             text-decoration: none;
@@ -87,6 +90,9 @@
             color: black;
             transition: all .5s;
             font-weight: 300;
+            @include respond(phone){
+                font-size: 4rem;
+            }
             &:hover{
                 color:#270066
             }
