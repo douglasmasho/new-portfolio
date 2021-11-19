@@ -8,7 +8,7 @@ export const timelineData = [
         description: "Developing, updating, maintaining the organization's website and monitoring its traffic . Working with the graphic designer.",
         techlist: ["React", "Redux", "Firebase"],
         imgsrc: SeeLogo,
-        gitlink: "https://github.com/douglasmasho/athena-budget",
+        gitlink: "https://github.com/douglasmasho/iamvoting",
         demolink: "https://athena-budget.netlify.app/"
     },
     

@@ -7,6 +7,7 @@ import { ThemeContext } from './contexts/ThemeContext';
 import Navbar from './components/Navbar';
 import ScrollToTop from './functionality/ScrollToTop';
 import Footer from './components/Footer';
+import { hydrate, render } from "react-dom";
 
 
 function App() {
