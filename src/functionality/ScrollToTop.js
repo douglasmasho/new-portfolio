@@ -6,7 +6,7 @@ class ScrollToTop extends Component{
         if(this.props.location !== prevProps.location){
             this.props.scrollToTop();
         }
-        console.log(this.props.location);
+       
     }
 
     render(){

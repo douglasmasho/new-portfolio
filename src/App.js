@@ -1,17 +1,14 @@
-import React, {useState, useContext, useEffect, useRef} from 'react'
+import React, { useContext, useRef} from 'react'
 import CarouselComp from "./components/Carousel";
-import Slider from "./components/Slider";
 import '@brainhubeu/react-carousel/lib/style.css';
 import "./sass/main.scss";
 import { ThemeContext } from './contexts/ThemeContext';
-import Navbar from './components/Navbar';
 import ScrollToTop from './functionality/ScrollToTop';
 import Footer from './components/Footer';
-import { hydrate, render } from "react-dom";
 
 
 function App() {
-  const {theme, setTheme} = useContext(ThemeContext);
+  const {theme} = useContext(ThemeContext);
   const appRef = useRef();
 
  const scrollToTop = ()=>{

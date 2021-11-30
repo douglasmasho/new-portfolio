@@ -4,8 +4,6 @@ import Blabble from "./../../assets/blabblebg.jpg";
 import Bugtray from "./../../assets/bugtray.jpg";
 import Foodle from "./../../assets/foodle.png";
 import Risit from "./../../assets/risit.png";
-import Kronos from "./../../assets/kronos.png";
-import Athena from "./../../assets/athenabg.jpg";
 
 
 export const devData = [
@@ -57,7 +55,7 @@ export const devData = [
     {
         name: "RISIT",
         tag: "Invoice Generator",
-        description: "RISIT is a receipt(ivoice generator) that i created for SEE Namibia (IAMVoting Namibia at the time). This app can be used to generate and print an invoice that includes the transaction details as well as the donor's details.",
+        description: "RISIT is a receipt(invoice generator) that I created for SEE Namibia (IAMVoting Namibia at the time). This app can be used to generate and print an invoice that includes the transaction details as well as the donor's details.",
         techlist: ["React", "Redux","html2canvas"],
         imgsrc: Risit,
         gitlink: "https://github.com/douglasmasho/risit",

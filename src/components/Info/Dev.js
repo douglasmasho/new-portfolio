@@ -7,7 +7,6 @@ import ReduxIcon from "./../../assets/redux1.svg";
 import JsonIcon from "./../../assets/json.svg";
 import SocketIcon from "./../../assets/sockets1.svg";
 import FirebaseIcon from "./../../assets/firebase.svg";
-import SeeLogo from "./../../assets/seelogo.png";
 import { devData } from './projectsdata';
 import DevProject from './DevProject';
 import { timelineData } from './timelinedata';

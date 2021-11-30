@@ -19,8 +19,8 @@ const DevProject = ({project}) => {
             </div>
             <div className="timeline-item__thumb" data-aos="zoom-out" data-aos-delay="400" data-aos-duration="500">
                 <div className="timeline-item__thumb__overlay">
-                    <a href={project.gitlink} target="_blank"><i className="fab fa-github" title="View Github"></i></a>
-                    <a href={project.demolink} target="_blank"><i className="icon fas fa-eye" title="Demo"></i></a>
+                    <a href={project.gitlink} target="_blank" rel="noreferrer"><i className="fab fa-github" title="View Github"></i></a>
+                    <a href={project.demolink} target="_blank" rel="noreferrer"><i className="icon fas fa-eye" title="Demo"></i></a>
                 </div>
                 <img src={project.imgsrc} alt={`${project.name}logo`} />
             </div>

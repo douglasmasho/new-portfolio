@@ -10,7 +10,7 @@ const FreelanceProject = ({project}) => {
         <div className="timeline-item">
             <div className="timeline-item__thumb" data-aos="zoom-out" data-aos-delay="400" data-aos-duration="500">
                 <div className="timeline-item__thumb__overlay">
-                    <a href={project.link} target="_blank"><i className="icon fas fa-eye" title="Demo"></i></a>
+                    <a href={project.link} target="_blank" rel="noreferrer"><i className="icon fas fa-eye" title="Demo"></i></a>
                 </div>
                 <img src={project.imgsrc} alt={`${project.name}logo`} />
             </div>

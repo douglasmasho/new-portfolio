@@ -14,7 +14,7 @@ const GalleryItem = () => {
         setCurrent(current === 0 ? length -1 : current - 1)
     }
 
-    console.log(current)
+    
 
     if(!Array.isArray(galleryData) || galleryData.length <= 0){
         return null;
@@ -32,7 +32,7 @@ const GalleryItem = () => {
                             {
                                index === current && (
                                    <div className="center-hrz">
-                                     <img src={el.image} alt="design image" className="slider__image"/>
+                                     <img src={el.image} alt="design" className="slider__image"/>
                                    </div>
                                ) 
                             }

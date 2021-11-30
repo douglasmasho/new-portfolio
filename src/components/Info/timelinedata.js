@@ -9,7 +9,7 @@ export const timelineData = [
         techlist: ["React", "Redux", "Firebase"],
         imgsrc: SeeLogo,
         gitlink: "https://github.com/douglasmasho/iamvoting",
-        demolink: "https://athena-budget.netlify.app/"
+        demolink: "https://seenamibia.org/"
     },
     
 ]

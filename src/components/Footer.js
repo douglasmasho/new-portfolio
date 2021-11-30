@@ -1,22 +1,17 @@
-import React, {useContext, useEffect} from 'react';
+import React, { useEffect} from 'react';
 import { useHistory } from 'react-router';
-import { ThemeContext } from "../contexts/ThemeContext";
 import Arc from "../assets/arc.svg";
 import AOS from 'aos';
 import "aos/dist/aos.css";
 import { getAnalytics, logEvent } from "firebase/analytics";
 const Footer = () => {
     const history = useHistory();
-  const { theme, setTheme } = useContext(ThemeContext);
+
   const analytics = getAnalytics();
     useEffect(() => {
         AOS.init();
         AOS.refresh();
     }, []);
-
-    const setSlide = (val)=>{
-        setTheme(val);
-      }
 
     const navigateTo = (type)=>{
         switch(type){
@@ -35,11 +30,11 @@ const Footer = () => {
 
     const emailEvent = ()=>{
         logEvent(analytics, "email-click", {name: "email_clicked"});
-        console.log("event logged");
+        
     }
     const phoneEvent = ()=>{
         logEvent(analytics, "phone-click", {name: "phone_clicked"});
-        console.log("event logged");
+        
     }
     return (
         <section id="footer">

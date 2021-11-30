@@ -1,10 +1,7 @@
 import React, { useContext , useEffect} from "react";
 import { ThemeContext } from "../../contexts/ThemeContext";
-import PDF from "../../downloads/mycv.pdf";
-import {Link, useHistory} from "react-router-dom";
-import  fileDownload from "js-file-download";
-import axios from "axios";
-import { TimelineLite, gsap, Power3, Power2 } from "gsap";
+import {useHistory} from "react-router-dom";
+import {gsap, Power2 } from "gsap";
 import MeMos from "../../assets/memos.jpg";
 import WhatIDo from "../../assets/whatido.png";
 import UnamLogo from "../../assets/unamlogo.svg";
@@ -22,33 +19,27 @@ const About = (props) => {
     AOS.refresh();
   }, []);
   const { theme, setTheme } = useContext(ThemeContext);
-  let t1 = new TimelineLite();
   
   const setSlide = (val)=>{
     setTheme(val);
   }
   
   useEffect(()=>{
-    // t1.from("", {
-    //   x: -15,
+
+
+    // gsap.from(".link-ind-container", 1,{
+    //   x: -20,
     //   opacity: 0,
     //   ease: Power2.easeOut,
-    //   delay:0.2
-    // }, "Start")
-
-    gsap.from(".link-ind-container", 1,{
-      x: -20,
-      opacity: 0,
-      ease: Power2.easeOut,
-      stagger: 0.2,
-      scrollTrigger:{
-        trigger: ".social__container",
-        start: "top 90%",
-        end: "bottom 50%",
-        toggleActions: "restart complete reverse reset"
-      }
-      // delay:0.2
-    }, 0.15, "Start")
+    //   stagger: 0.2,
+    //   scrollTrigger:{
+    //     trigger: ".social__container",
+    //     start: "top 90%",
+    //     end: "bottom 50%",
+    //     toggleActions: "restart complete reverse reset"
+    //   }
+    //   // delay:0.2
+    // }, 0.15, "Start")
 
  
   },[])
@@ -76,19 +67,19 @@ const About = (props) => {
         <div className="center-hrz">
           <div className="social__container">
               <div className="center-hrz--col link-ind-container">
-                <a href="https://docdro.id/rOzpzGJ" target="_blank" className="social__link" title="resume" style={{ color: theme.accent }}><i className="fas fa-download"></i></a>
+                <a href="https://docdro.id/rOzpzGJ" target="_blank" rel="noreferrer" className="social__link" title="resume" style={{ color: theme.accent }}><i className="fas fa-download"></i></a>
                 <p className=" small-text white-text u-margin-top-tiny">resume</p>
               </div>
               <div className="center-hrz--col link-ind-container">
-                <a href="https://github.com/douglasmasho" target="_blank" className="social__link" style={{ color: theme.accent }}><i className="fab fa-github"></i></a>
+                <a href="https://github.com/douglasmasho" target="_blank" rel="noreferrer" className="social__link" style={{ color: theme.accent }}><i className="fab fa-github"></i></a>
                 <p className=" small-text white-text u-margin-top-tiny">Gitub</p>
               </div>
               <div className="center-hrz--col link-ind-container">
-                <a href="https://www.instagram.com/bytearc_/" target="_blank" className="social__link" style={{ color: theme.accent }}><i className="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/bytearc_/" target="_blank" rel="noreferrer" className="social__link" style={{ color: theme.accent }}><i className="fab fa-instagram"></i></a>
                 <p className=" small-text white-text u-margin-top-tiny">Instagram</p>
               </div>
               <div className="center-hrz--col link-ind-container">
-                <a href="https://www.linkedin.com/in/douglasmasho/" target="_blank" className="social__link" style={{ color: theme.accent }}><i className="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/douglasmasho/" target="_blank" rel="noreferrer" className="social__link" style={{ color: theme.accent }}><i className="fab fa-linkedin"></i></a>
                 <p className=" small-text white-text u-margin-top-tiny">LinkedIn</p>
               </div>
           </div>

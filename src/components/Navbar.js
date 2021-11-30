@@ -1,7 +1,6 @@
 import React,{useContext, useRef, useEffect, useState} from 'react';
 import { ThemeContext } from '../contexts/ThemeContext';
 import {Link} from "react-router-dom";
-import { TimelineLite, gsap, Power3, Power2 } from "gsap";
 
 
 
@@ -11,16 +10,7 @@ const Navbar = () => {
     const linkOneRef = useRef();
     const linkTwoRef = useRef();
     const linkThreeRef = useRef();
-     let t1 = new TimelineLite({delay: 0.3});
 
-    useEffect(()=>{
-        // t1.staggerFrom(".navbar__link", 1,{
-        //     x: -20,
-        //     opacity: 0,
-        //     ease: Power2.easeOut,
-        //     // delay:0.2
-        //   }, 0.1, "Start")
-    },[])
 
 
     const setSlide = (val)=>{
@@ -57,6 +47,8 @@ const Navbar = () => {
                linkTwoRef.current.style.color = "white";
                linkThreeRef.current.style.color = theme.accent;
                break;
+            default: 
+
         }
     })
     

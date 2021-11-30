@@ -1,5 +1,5 @@
-import React, {useEffect, useState} from 'react';
-import {useTransition, animation, animated, useTrail} from "react-spring";
+import React, {useState} from 'react';
+import {useTransition, animated, useTrail} from "react-spring";
 
 
 const AboutHeader = ({accent}) => {

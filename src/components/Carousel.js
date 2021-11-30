@@ -1,11 +1,9 @@
-import React, {useState, useContext, useEffect} from 'react'
-import Carousel, { Dots,  arrowsPlugin } from '@brainhubeu/react-carousel';
+import React, {useContext, useEffect} from 'react'
+import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 import ImageOne from "../assets/coder.svg"
 import ImageTwo from "../assets/Group 61.svg"
 import ImageThree from "../assets/Group 60.svg"
-import ArrowLeft from "../assets/arrows_left.svg";
-import ArrowRight from "../assets/arrows_right.svg";
 import { ThemeContext } from '../contexts/ThemeContext';
 import AboutHeader from './headers/AboutHeader';
 import DesignHeader from './headers/DesignHeader';
@@ -52,24 +50,6 @@ const CarouselComp = () => {
     }
   },[])
 
-  let displayPropLeft;
-  switch(theme.value){
-    case 0: 
-      displayPropLeft = "none"
-      break;
-      default: 
-     displayPropLeft = "block"
-      break;
-  }
-  let displayPropRight;
-  switch(theme.value){
-    case 2: 
-      displayPropRight = "none"
-      break;
-      default: 
-     displayPropRight = "block"
-      break;
-  }
   let textComp;
   switch(theme.id){
     case "about": 
@@ -95,9 +75,9 @@ const CarouselComp = () => {
         draggable={false}
         >
 
-            <img className="carousel__img layer" data-speed="-2" src={ImageTwo}/>   
-            <img className="carousel__img layer" data-speed="-2" src={ImageOne}/>   
-            <img className="carousel__img layer" data-speed="-2" src={ImageThree}/>   
+            <img className="carousel__img layer" data-speed="-2" src={ImageTwo} alt=""/>   
+            <img className="carousel__img layer" data-speed="-2" src={ImageOne} alt=""/>   
+            <img className="carousel__img layer" data-speed="-2" src={ImageThree} alt=""/>   
             
         </Carousel>
         {textComp}

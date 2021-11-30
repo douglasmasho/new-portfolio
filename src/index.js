@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import ThemeContextProvider from "./contexts/ThemeContext";
 import {BrowserRouter} from "react-router-dom";
+import { hydrate, render } from "react-dom";
+
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
@@ -26,15 +28,38 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
+const rootElement =  document.getElementById('root');
 
-ReactDOM.render(
+
+if(rootElement.hasChildNodes()){
+  hydrate(  
   <BrowserRouter>
     <React.StrictMode>
-    <ThemeContextProvider>
+      <ThemeContextProvider>
         <App />
-    </ThemeContextProvider>
-  </React.StrictMode>
-  </BrowserRouter>,
-  document.getElementById('root')
-);
+       </ThemeContextProvider>
+    </React.StrictMode>
+  </BrowserRouter>, rootElement)
+}else{
+  render(  
+    <BrowserRouter>
+      <React.StrictMode>
+        <ThemeContextProvider>
+          <App />
+         </ThemeContextProvider>
+      </React.StrictMode>
+    </BrowserRouter>, rootElement)
+}
+
+
+// ReactDOM.render(
+//   <BrowserRouter>
+//     <React.StrictMode>
+//     <ThemeContextProvider>
+//         <App />
+//     </ThemeContextProvider>
+//   </React.StrictMode>
+//   </BrowserRouter>,
+//   rootElement
+// );
 
