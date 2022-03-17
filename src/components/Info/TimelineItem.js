@@ -19,7 +19,11 @@ const TimeLineItem = ({item}) => {
             </div>
             <div className="timeline-item__thumb" data-aos="zoom-out" data-aos-delay="400" data-aos-duration="500">
                 <div className="timeline-item__thumb__overlay">
-                    <a href={item.gitlink} target="_blank" rel="noreferrer"><i className="fab fa-github" title="View Github"></i></a>
+                    {
+                        item.gitLink !== "" ?
+                        <a href={item.gitlink} target="_blank" rel="noreferrer"><i className="fab fa-github" title="View Github"></i></a>:
+                        null
+                    }
                     <a href={item.demolink} target="_blank" rel="noreferrer"><i className="icon fas fa-eye" title="Demo"></i></a>
                 </div>
                 <img src={item.imgsrc} alt={`${item.name}logo`} />

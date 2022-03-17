@@ -19,7 +19,8 @@ import See3 from "../../assets/design/see3.png";
 import Smokes1 from "../../assets/design/smokes1.jpg";
 import Smokes2 from "../../assets/design/smokes2.jpg";
 import Smokes3 from "../../assets/design/smokes3.jpg";
-
+import Delta from "../../assets/dedsign/DGS2.png"
+import Delta2 from "../../assets/dedsign/DGS3png"
 
 
 
@@ -86,5 +87,11 @@ export const galleryData = [
     },
     {
         image: Smokes3
+    },
+    {
+        image: Delta2
+    },
+    {
+        image: Delta3
     },
 ]

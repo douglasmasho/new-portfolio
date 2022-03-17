@@ -74,14 +74,12 @@ const CarouselComp = () => {
         animationSpeed ={800}
         draggable={false}
         >
-
             <img className="carousel__img layer" data-speed="-2" src={ImageTwo} alt=""/>   
             <img className="carousel__img layer" data-speed="-2" src={ImageOne} alt=""/>   
-            <img className="carousel__img layer" data-speed="-2" src={ImageThree} alt=""/>   
-            
+            <img className="carousel__img layer" data-speed="-2" src={ImageThree} alt=""/>     
         </Carousel>
         {textComp}
-        <Navbar/>
+        {/* <Navbar/> */}
         <div className="scroll-container center-hrz--col">
           <p class="small-text" style={{color: theme.accent}}>Scroll for more</p>
           <button className="scroll-down"><i className="lni lni-chevron-down" style={{color: theme.accent}}></i></button>
