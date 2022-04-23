@@ -8,6 +8,8 @@ import UnamLogo from "../../assets/unamlogo.svg";
 import AOS from 'aos';
 import "aos/dist/aos.css";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
+import EducationComponent from "./EducationComponent";
+import {educationData} from "./educationData";
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -67,7 +69,7 @@ const About = (props) => {
         <div className="center-hrz">
           <div className="social__container">
               <div className="center-hrz--col link-ind-container">
-                <a href="https://docdro.id/rOzpzGJ" target="_blank" rel="noreferrer" className="social__link" title="resume" style={{ color: theme.accent }}><i className="fas fa-download"></i></a>
+                <a href="https://docdro.id/6ymGLbm" target="_blank" rel="noreferrer" className="social__link" title="resume" style={{ color: theme.accent }}><i className="fas fa-download"></i></a>
                 <p className=" small-text white-text u-margin-top-tiny">resume</p>
               </div>
               <div className="center-hrz--col link-ind-container">
@@ -117,8 +119,11 @@ const About = (props) => {
 
     <section id="education" className="u-margin-top-huge u-margin-bottom-big">
     <div className="center-hrz--col u-margin-bottom">
-         <h3 className="header-text u-margin-bottom" data-aos="zoom-out" data-aos-delay="400">Education</h3>
-         <div className="row education-container">
+         <h3 className="header-text u-margin-bottom white-text" data-aos="zoom-out" data-aos-delay="400">Education</h3>
+         {
+           educationData.map((edu, index)=><EducationComponent key={index} eduObj={edu}/>)
+         }
+         {/* <div className="row education-container">
            <div className="education__logoContainer" style={{ backgroundColor: "black" }} data-aos="zoom-out" data-aos-delay="300" data-aos-duration="800">
              <img src={UnamLogo} alt="unam logo" data-aos="zoom-out" data-aos-delay="500" data-aos-duration="800"/>
              <div className="center-hrz">
@@ -132,11 +137,15 @@ const About = (props) => {
               <p className="bigger-text">Feb 2021 - Present</p>
               <p className="bigger-text light-text-2">Duration: 4 Years</p>
            </div>
-         </div>
+         </div> */}
       </div>
     </section>
 
-    <section className="u-margin-bottom-big">
+    <section className="u-margin-bottom-big u-margin-top-huge">
+      <div className="center-hrz">
+      <h3 className="header-text u-margin-bottom white-text" data-aos="zoom-out" data-aos-delay="400">Portfolios</h3>
+      </div>
+      <p className="white-text bigger-text center-text u-margin-left u-margin-right u-margin-bottom">Click left for design portfolio, right for development protfolio</p>
       <div className="center-hrz">
         <div className="detour row" data-aos="fade">   
                <div className="detour--1" onClick={()=>{goToPage("DESIGN")}}>

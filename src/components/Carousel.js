@@ -14,11 +14,6 @@ import About from './Info/About';
 import Dev from './Info/Dev';
 import Design from './Info/Design';
 
-
-
-
-
-
 const CarouselComp = () => {
   const {theme, setTheme} = useContext(ThemeContext);
 

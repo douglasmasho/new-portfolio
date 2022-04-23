@@ -11,6 +11,7 @@ export const devData = [
         name: "Drip FTWR",
         tag: "Ecommerce frontend",
         description: "This project is a frontend for an e-commerce shoe store.",
+        time: "JAN 2020 - SEPT 2020",
         techlist: ["Gsap", "Jquery", "Local Storage"],
         imgsrc: DripFtwr,
         gitlink: "https://github.com/douglasmasho/dripfootwear",
@@ -19,6 +20,7 @@ export const devData = [
     {
         name: "Tutero Live",
         tag: "Video Chat app",
+        time: "AUG 2020 - DEC 2021",
         description: "A Video chat web app for online tutorials and even pair study sessions. This app comes with additional tools for collaboration on top of video chat.",
         techlist: ["React", "WebRTC", "Socket.io"],
         imgsrc: Tuterolive,
@@ -28,6 +30,7 @@ export const devData = [
     {
         name: "Blabble",
         tag: "Web Chat app",
+        time: "AUG 2020 - AUG 2020",
         description: "A chatting application with the ability to create and chat in private rooms of up to 10 people. The chat window on the homepage is a universal chat that can be interacted with by all online users.",
         techlist: ["React", "Socket.io","Express"],
         imgsrc: Blabble,
@@ -37,6 +40,7 @@ export const devData = [
     {
         name: "Bugtray",
         tag: "Bug tracker",
+        time: "SEPT 2021 - DEC 2020",
         description: "A bug tracking application. A platform where teams can track the status of bugs/issues during the development process.",
         techlist: ["React", "Redux","Firebase"],
         imgsrc: Bugtray,
@@ -46,6 +50,7 @@ export const devData = [
     {
         name: "Foodle",
         tag: "Nutrition App",
+        time: "JUL 2020 - SEPT 2020",
         description: "Foodle is a recipe searching app that generates recipes, ingredients and nutritional information for any recipe search query. This app includes an ingredient analyzer that shows nutritional composition of any ingredient in the form of a bar graph.",
         techlist: ["React", "REST API","Axios"],
         imgsrc: Foodle,
@@ -55,29 +60,12 @@ export const devData = [
     {
         name: "RISIT",
         tag: "Invoice Generator",
+        time: "APR 2021 - APR 2021",
         description: "RISIT is a receipt(invoice generator) that I created for SEE Namibia (IAMVoting Namibia at the time). This app can be used to generate and print an invoice that includes the transaction details as well as the donor's details.",
         techlist: ["React", "Redux","html2canvas"],
         imgsrc: Risit,
         gitlink: "https://github.com/douglasmasho/risit",
         demolink: "https://risit-d18a1.web.app"
     },
-    // {
-    //     name: "Kronos",
-    //     tag: "Landing Page(also my very first project!)",
-    //     description: "Kronos is a landing page for a fictional Swedish watch maker.",
-    //     techlist: ["HTML5", "CSS3(SASS)","JQuery"],
-    //     imgsrc: Kronos,
-    //     gitlink: "https://github.com/douglasmasho/Kronos",
-    //     demolink: "https://kronos-watches.netlify.app"
-    // },
-    // {
-    //     name: "Athena",
-    //     tag: "Budget Calculator",
-    //     description: "A monthly budget calculator. Calculates in realtime the budget variance and the percentage that each expense takes from the monthly income.",
-    //     techlist: ["HTML5", "CSS3(SASS)", "JavaScript"],
-    //     imgsrc: Athena,
-    //     gitlink: "https://github.com/douglasmasho/athena-budget",
-    //     demolink: "https://athena-budget.netlify.app"
-    // },
     
 ]

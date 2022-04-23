@@ -20,7 +20,8 @@ import Smokes1 from "../../assets/design/smokes1.jpg";
 import Smokes2 from "../../assets/design/smokes2.jpg";
 import Smokes3 from "../../assets/design/smokes3.jpg";
 import Delta from "../../assets/design/DGS2.png"
-import Delta2 from "../../assets/design/DGS3.png"
+import Delta2 from "../../assets/design/DGS3.png";
+import TheChase from "../../assets/design/the chase.png";
 
 
 
@@ -93,5 +94,8 @@ export const galleryData = [
     },
     {
         image: Delta2
+    },
+    {
+        image: TheChase
     },
 ]

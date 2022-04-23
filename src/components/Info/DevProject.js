@@ -10,6 +10,7 @@ const DevProject = ({project}) => {
             <div className="timeline-item__info">
                 <h3 className="timeline-item__info__name" data-aos="fade-right" data-aos-duration="1000" style={{color: theme.accent}}>{project.name}</h3>
                 <h4 className="timeline-item__info__position">{project.tag}</h4>
+                <p className="timeline-item__info__time u-margin-bottom">{project.time}</p>
                 <p className="timeline-item__info__description white-text">{project.description}</p>
                 <ul className="timeline-item__info__list u-margin-top">
                     {
