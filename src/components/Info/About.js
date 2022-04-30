@@ -69,7 +69,7 @@ const About = (props) => {
         <div className="center-hrz">
           <div className="social__container">
               <div className="center-hrz--col link-ind-container">
-                <a href="https://docdro.id/6ymGLbm" target="_blank" rel="noreferrer" className="social__link" title="resume" style={{ color: theme.accent }}><i className="fas fa-download"></i></a>
+                <a href="https://docdro.id/hRpJIpm" target="_blank" rel="noreferrer" className="social__link" title="resume" style={{ color: theme.accent }}><i className="fas fa-download"></i></a>
                 <p className=" small-text white-text u-margin-top-tiny">resume</p>
               </div>
               <div className="center-hrz--col link-ind-container">

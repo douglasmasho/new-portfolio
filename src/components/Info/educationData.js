@@ -23,7 +23,7 @@ export const educationData = [
         logo: UnamLogo,
         qualType: "Bachelor of Science Honours(Comp. sci)",
         major: "Computer Science",
-        interval: "2021-Current",
-        duration: "2 years",
+        interval: "2021-Present",
+        duration: "4 years",
      }
 ]

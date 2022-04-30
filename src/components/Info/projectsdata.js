@@ -20,7 +20,7 @@ export const devData = [
     {
         name: "Tutero Live",
         tag: "Video Chat app",
-        time: "AUG 2020 - DEC 2021",
+        time: "AUG 2020 - DEC 2020",
         description: "A Video chat web app for online tutorials and even pair study sessions. This app comes with additional tools for collaboration on top of video chat.",
         techlist: ["React", "WebRTC", "Socket.io"],
         imgsrc: Tuterolive,
@@ -40,7 +40,7 @@ export const devData = [
     {
         name: "Bugtray",
         tag: "Bug tracker",
-        time: "SEPT 2021 - DEC 2020",
+        time: "SEPT 2020 - DEC 2020",
         description: "A bug tracking application. A platform where teams can track the status of bugs/issues during the development process.",
         techlist: ["React", "Redux","Firebase"],
         imgsrc: Bugtray,
