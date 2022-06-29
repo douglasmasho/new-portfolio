@@ -16,7 +16,7 @@ export const timelineData = [
     {
         name: "Lubin Talent Solutions",
         tag: "Web Developer",
-        time: "DEC 2021 - Present",
+        time: "DEC 2021 - MAY 2022",
         description: "Rebranding of the business. Frontend and backend development of the job search website. Maintenance and admin work for the website. Website features include job board, email and on-site notifications, employee dashboard where employees can track their application status,employer dashboard where employers can see job applicants' details, and communicate with candidates they are interested in.",
         techlist: ["React", "Firebase", "Algolia"],
         imgsrc: LubinLogo,

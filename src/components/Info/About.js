@@ -2,7 +2,7 @@ import React, { useContext , useEffect} from "react";
 import { ThemeContext } from "../../contexts/ThemeContext";
 import {useHistory} from "react-router-dom";
 import {gsap, Power2 } from "gsap";
-import MeMos from "../../assets/memos.jpg";
+import MeMos from "../../assets/me_mos.jpg";
 import WhatIDo from "../../assets/whatido.png";
 import UnamLogo from "../../assets/unamlogo.svg";
 import AOS from 'aos';
