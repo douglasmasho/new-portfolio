@@ -77,7 +77,7 @@ const About = (props) => {
                 <p className=" small-text white-text u-margin-top-tiny">Gitub</p>
               </div>
               <div className="center-hrz--col link-ind-container">
-                <a href="https://www.instagram.com/bytearc_/" target="_blank" rel="noreferrer" className="social__link" style={{ color: theme.accent }}><i className="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/douglasmasho/" target="_blank" rel="noreferrer" className="social__link" style={{ color: theme.accent }}><i className="fab fa-instagram"></i></a>
                 <p className=" small-text white-text u-margin-top-tiny">Instagram</p>
               </div>
               <div className="center-hrz--col link-ind-container">

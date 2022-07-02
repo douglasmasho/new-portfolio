@@ -1,5 +1,6 @@
 import SeeLogo from "./../../assets/seelogo.png";
-import LubinLogo from "./../../assets/lubinlogo.png"
+import LubinLogo from "./../../assets/lubinlogo.png";
+import MuhokoLogo from "./../../assets/muhoko.png";
 
 export const timelineData = [
     {
@@ -22,6 +23,16 @@ export const timelineData = [
         imgsrc: LubinLogo,
         gitLink: "",
         demolink: "https://lubintalentsolutions.com/"
+    },
+    {
+        name: "Muhoko",
+        tag: "Junior Software Developer",
+        time: "JUL 2022 - Present",
+        description: "Writing and Debugging Code. Troubleshooting software issues. Working closely with developers to improve product functionality. Attending developer meetings. Participating in code reviews and quality assurance activities",
+        techlist: ["Flutter", "Dart"],
+        imgsrc: MuhokoLogo,
+        gitLink: "",
+        demolink: "https://muhoko.org/"
     },
     
 ]
