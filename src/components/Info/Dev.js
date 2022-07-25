@@ -7,6 +7,9 @@ import ReduxIcon from "./../../assets/redux1.svg";
 import JsonIcon from "./../../assets/json.svg";
 import SocketIcon from "./../../assets/sockets1.svg";
 import FirebaseIcon from "./../../assets/firebase.svg";
+import FlutterIcon from "./../../assets/flutter.svg";
+import DartIcon from "./../../assets/dart.svg";
+
 import { devData } from './projectsdata';
 import DevProject from './DevProject';
 import { timelineData } from './timelinedata';
@@ -33,22 +36,26 @@ const Dev = () => {
                 </div>
 
               
-                <ul className="grid grid-4 skills-list" style={{color: theme.accent}}>
+                <ul className="grid grid-5 skills-list" style={{color: theme.accent}}>
                     <li>
-                        <i className="fab fa-html5 grid-4--child" data-aos="fade-right" data-aos-delay="0" data-aos-duration="700"></i>
+                        <i className="fab fa-html5 grid-5--child" data-aos="fade-right" data-aos-delay="0" data-aos-duration="700"></i>
                         <p className="normal-text">HTML5</p>
                     </li>
                     <li>
-                        <i className="fab fa-css3-alt grid-4--child" data-aos="fade-right" data-aos-delay="100"  data-aos-duration="700"></i>
+                        <i className="fab fa-css3-alt grid-5--child" data-aos="fade-right" data-aos-delay="100"  data-aos-duration="700"></i>
                         <p className="normal-text">CSS3</p>
                     </li>
                     <li>
-                        <i className="fab fa-js-square grid-4--child" data-aos="fade-right" data-aos-delay="200"  data-aos-duration="700"></i>
+                        <i className="fab fa-js-square grid-5--child" data-aos="fade-right" data-aos-delay="200"  data-aos-duration="700"></i>
                         <p className="normal-text">JavaScript</p>
                     </li>
                     <li>
-                        <img src={CsharpIcon} alt="c# icon" className="grid-4--child" data-aos="fade-right" data-aos-delay="300"  data-aos-duration="700"/>
+                        <img src={CsharpIcon} alt="c# icon" className="grid-5--child" data-aos="fade-right" data-aos-delay="300"  data-aos-duration="700"/>
                         <p className="normal-text">C#</p>
+                    </li>
+                    <li>
+                        <img src={DartIcon} alt="dart icon" className="grid-5--child" data-aos="fade-right" data-aos-delay="300"  data-aos-duration="700"/>
+                        <p className="normal-text">Dart</p>
                     </li>
                 </ul>
 
@@ -68,6 +75,14 @@ const Dev = () => {
                     <li>
                         <i className="fab fa-react grid-4--child" data-aos="fade-right" data-aos-delay="100" data-aos-duration="700"></i>
                         <p className="normal-text">React</p>
+                    </li>
+                    <li>
+                        <i className="fab fa-react grid-4--child" data-aos="fade-right" data-aos-delay="100" data-aos-duration="700"></i>
+                        <p className="normal-text">React Native</p>
+                    </li>
+                    <li>
+                    <img src={FlutterIcon} alt="flutter icon" className="grid-4--child" data-aos="fade-right" data-aos-delay="700" data-aos-duration="700"/>
+                        <p className="normal-text">Flutter</p>
                     </li>
                     <li>
                         <i className="fab fa-node-js grid-4--child" data-aos="fade-right" data-aos-delay="200" data-aos-duration="700"></i>
