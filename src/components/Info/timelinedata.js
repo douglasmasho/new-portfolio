@@ -29,7 +29,7 @@ export const timelineData = [
         tag: "Junior Software Developer",
         time: "JUL 2022 - Present",
         description: "Writing and Debugging Code. Troubleshooting software issues. Working closely with developers to improve product functionality. Attending developer meetings. Participating in code reviews and quality assurance activities",
-        techlist: ["Flutter", "Dart"],
+        techlist: ["Flutter", "Dart", "Hostgator"],
         imgsrc: MuhokoLogo,
         gitLink: "",
         demolink: "https://muhoko.org/"
