@@ -114,7 +114,7 @@ const Dev = () => {
                 <codersrank-widget username="douglasmasho" class="widgett"  data-aos-duration="500"></codersrank-widget>
                 </div>
                 <div className="center-hrz" >
-                <codersrank-skills-chart username="douglasmasho" class="widgett"  data-aos-duration="500" style={{width: "80vw"}} labels="true" tooltip="true" legend="true" skills="Javascript, CSS, Scss, HTML, C#, JSON, TypeScript"></codersrank-skills-chart>
+                <codersrank-skills-chart username="douglasmasho" class="widgett"  data-aos-duration="500" style={{width: "80vw"}} labels="true" tooltip="true" legend="true" skills="Javascript, CSS, Scss, HTML, C#, TypeScript, Dart"></codersrank-skills-chart>
                 </div>
             </section>
 
