@@ -35,8 +35,7 @@ const Dev = () => {
                     <h3 style={{backgroundColor: "white"}} className="sub-heading">Languages</h3>
                 </div>
 
-              
-                <ul className="grid grid-5 skills-list" style={{color: theme.accent}}>
+                <ul className="grid grid-3 skills-list" style={{color: theme.accent}}>
                     <li>
                         <i className="fab fa-html5 grid-5--child" data-aos="fade-right" data-aos-delay="0" data-aos-duration="700"></i>
                         <p className="normal-text">HTML5</p>
@@ -57,6 +56,10 @@ const Dev = () => {
                         <img src={DartIcon} alt="dart icon" className="grid-5--child" data-aos="fade-right" data-aos-delay="300"  data-aos-duration="700"/>
                         <p className="normal-text">Dart</p>
                     </li>
+                    <li>
+                        <i className="fab fa-java grid-5--child" data-aos="fade-right" data-aos-delay="0" data-aos-duration="700"></i>
+                        <p className="normal-text">Java</p>
+                    </li>
                 </ul>
 
             </section>
@@ -67,7 +70,7 @@ const Dev = () => {
                 </div>
 
               
-                <ul className="grid grid-4 skills-list" style={{color: theme.accent}}>
+                <ul className="grid grid-5 skills-list" style={{color: theme.accent}}>
                     <li >
                         <i className="fab fa-sass grid-4--child" data-aos="fade-right" data-aos-delay="0" data-aos-duration="700"></i>
                         <p className="normal-text">SASS</p>

@@ -55,14 +55,8 @@ const Footer = () => {
                <ul className="footer__list footer__list--2">
                     <li>
                         <div className="contactInfo">
-                            <h5 className="footer__list__header">Email 1</h5>
-                            <a href="mailto:dev@douglasmasho.ml" className="footer__list__link" onClick={emailEvent}>dev@douglasmasho.ml</a>
-                        </div>
-                    </li> <br />
-                    <li>
-                       <div className="contactInfo">
-                            <h5  className="footer__list__header">Email 2</h5>
-                            <a href="mailto:douglasmasho@gmail.com" className="footer__list__link" onClick={emailEvent}>douglasmasho@gmail.com</a>
+                            <h5 className="footer__list__header">Email</h5>
+                            <a href="mailto:dev@douglasmasho.ml" className="footer__list__link" onClick={emailEvent}>hi@douglasmasho.com</a>
                         </div>
                     </li> <br />
                     <li>

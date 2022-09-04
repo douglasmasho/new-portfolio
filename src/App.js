@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div className="App" style={{backgroundColor: theme.background}} ref={appRef}>
-      <Navbar/>
+    <Navbar/>
      <CarouselComp/>
      <Footer/>
      <ScrollToTop scrollToTop={scrollToTop}/>
