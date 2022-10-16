@@ -8,16 +8,6 @@ import Risit from "./../../assets/risit.png";
 
 export const devData = [
     {
-        name: "Drip FTWR",
-        tag: "Ecommerce frontend",
-        description: "This project is a frontend for an e-commerce shoe store.",
-        time: "JAN 2020 - SEPT 2020",
-        techlist: ["Gsap", "Jquery", "Local Storage"],
-        imgsrc: DripFtwr,
-        gitlink: "https://github.com/douglasmasho/dripfootwear",
-        demolink: "https://dripfootwear.netlify.app"
-    },
-    {
         name: "Tutero Live",
         tag: "Video Chat app",
         time: "AUG 2020 - DEC 2020",
@@ -26,16 +16,6 @@ export const devData = [
         imgsrc: Tuterolive,
         gitlink: "https://github.com/douglasmasho/Tutero",
         demolink: "https://tuterolive.herokuapp.com"
-    },
-    {
-        name: "Blabble",
-        tag: "Web Chat app",
-        time: "AUG 2020 - AUG 2020",
-        description: "A chatting application with the ability to create and chat in private rooms of up to 10 people. The chat window on the homepage is a universal chat that can be interacted with by all online users.",
-        techlist: ["React", "Socket.io","Express"],
-        imgsrc: Blabble,
-        gitlink: "https://github.com/douglasmasho/Blabble-chat-app",
-        demolink: "https://blabble.herokuapp.com"
     },
     {
         name: "Bugtray",
@@ -48,6 +28,16 @@ export const devData = [
         demolink: "https://bugtray-b4725.firebaseapp.com"
     },
     {
+        name: "Blabble",
+        tag: "Web Chat app",
+        time: "AUG 2020 - AUG 2020",
+        description: "A chatting application with the ability to create and chat in private rooms of up to 10 people. The chat window on the homepage is a universal chat that can be interacted with by all online users.",
+        techlist: ["React", "Socket.io","Express"],
+        imgsrc: Blabble,
+        gitlink: "https://github.com/douglasmasho/Blabble-chat-app",
+        demolink: "https://blabble.herokuapp.com"
+    },
+    {
         name: "Foodle",
         tag: "Nutrition App",
         time: "JUL 2020 - SEPT 2020",
@@ -57,6 +47,17 @@ export const devData = [
         gitlink: "https://github.com/douglasmasho/Foodle",
         demolink: "https://foodle-recipes.netlify.app"
     },
+    {
+        name: "Drip FTWR",
+        tag: "Ecommerce frontend",
+        description: "This project is a frontend for an e-commerce shoe store.",
+        time: "JAN 2020 - SEPT 2020",
+        techlist: ["Gsap", "Jquery", "Local Storage"],
+        imgsrc: DripFtwr,
+        gitlink: "https://github.com/douglasmasho/dripfootwear",
+        demolink: "https://dripfootwear.netlify.app"
+    },
+
     {
         name: "RISIT",
         tag: "Invoice Generator",
