@@ -15,7 +15,7 @@ export const devData = [
         techlist: ["React", "WebRTC", "Socket.io"],
         imgsrc: Tuterolive,
         gitlink: "https://github.com/douglasmasho/Tutero",
-        demolink: "https://tuterolive.herokuapp.com"
+        demolink: "http://tutero-live.onrender.com/"
     },
     {
         name: "Bugtray",
@@ -35,7 +35,7 @@ export const devData = [
         techlist: ["React", "Socket.io","Express"],
         imgsrc: Blabble,
         gitlink: "https://github.com/douglasmasho/Blabble-chat-app",
-        demolink: "https://blabble.herokuapp.com"
+        demolink: "https://blabble.onrender.com"
     },
     {
         name: "Foodle",

@@ -29,6 +29,13 @@ const ThemeContextProvider = (props) => {
       value: 2,
       id: "dev",
     },
+    {
+      accent: "#00d4ff",
+      textColor: "#fff",
+      background: "#03045e",
+      value: 3,
+      id: "achievements",
+    },
   ];
 
   const [theme, setTheme] = useState(themes[1]);
@@ -50,6 +57,9 @@ const ThemeContextProvider = (props) => {
       case "/dev":
         setThemeFunc(2);
         break;
+      case "/achievements":
+          setThemeFunc(3);
+          break;
       default:
         setThemeFunc(1);
     }

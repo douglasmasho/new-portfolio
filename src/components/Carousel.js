@@ -4,6 +4,7 @@ import '@brainhubeu/react-carousel/lib/style.css';
 import ImageOne from "../assets/coder.svg"
 import ImageTwo from "../assets/Group 61.svg"
 import ImageThree from "../assets/Group 60.svg"
+import ImageFour from "../assets/achievement.svg"
 import { ThemeContext } from '../contexts/ThemeContext';
 import AboutHeader from './headers/AboutHeader';
 import DesignHeader from './headers/DesignHeader';
@@ -13,6 +14,8 @@ import {Route} from "react-router-dom"
 import About from './Info/About';
 import Dev from './Info/Dev';
 import Design from './Info/Design';
+import Achievements from './Info/Achievements';
+import AchievementsHeader from './headers/AchievementsHeader';
 
 const CarouselComp = () => {
   const {theme, setTheme} = useContext(ThemeContext);
@@ -56,6 +59,9 @@ const CarouselComp = () => {
     case "design": 
        textComp = <DesignHeader accent={theme.accent}/>
        break;
+    case "achievements": 
+       textComp = <AchievementsHeader accent={theme.accent}/>
+       break;
     default: 
        textComp = <AboutHeader accent={theme.accent}/>
        break;
@@ -71,7 +77,8 @@ const CarouselComp = () => {
         >
             <img className="carousel__img layer" data-speed="-2" src={ImageTwo} alt=""/>   
             <img className="carousel__img layer" data-speed="-2" src={ImageOne} alt=""/>   
-            <img className="carousel__img layer" data-speed="-2" src={ImageThree} alt=""/>     
+            <img className="carousel__img layer" data-speed="-2" src={ImageThree} alt=""/>    
+            <img className="carousel__img layer" data-speed="-2" src={ImageFour} alt=""/>     
         </Carousel>
         {textComp}
         {/* <Navbar/> */}
@@ -85,6 +92,7 @@ const CarouselComp = () => {
         <Route component={About} exact path="/"/>
         <Route component={Dev} exact path="/dev"/>
         <Route component={Design} exact path="/design"/>
+        <Route component={Achievements} exact path="/achievements"/>
         </div>
         </>
     )

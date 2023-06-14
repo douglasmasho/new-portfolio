@@ -1,6 +1,4 @@
-.dev{
-    
-}
+
 
 .skills-list{
     list-style: none;
@@ -54,11 +52,35 @@
         }
     }
 
+    &-a{
+        background: rgb(45,45,45);
+        background: linear-gradient(90deg, rgba(45,45,45,0) 0%, rgba(45,45,45,0) 70%, #00d4ff 70%, #00d4ff 100%);
+        @include respond(tab-port){
+            background: rgb(45,45,45);
+        background: linear-gradient(180deg, rgba(45,45,45,0) 0%, rgba(45,45,45,0) 70%, #00d4ff 70%, #00d4ff 100%);
+        margin-bottom: 10rem;
+        }
+        @include respond(phone){
+            margin-bottom: 15rem;
+        background: linear-gradient(180deg, rgba(45,45,45,0) 0%, rgba(45,45,45,0) 80%, #00d4ff 80%, #00d4ff 100%);
+        }
+        padding: 5rem 3rem;
+        &--reverse{
+            background: rgb(45,45,45);
+            background: linear-gradient(-90deg, rgba(45,45,45,0) 0%, rgba(45,45,45,0) 70%, #00d4ff 70%, #00d4ff 100%);
+            @include respond(tab-port){
+                background: rgb(45,45,45);
+            background: linear-gradient(0deg, rgba(45,45,45,0) 0%, rgba(45,45,45,0) 70%, #00d4ff 70%, #00d4ff 100%);
+            }
+        }
+    }
+
 }
 
 .timeline-item{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     @include respond(tab-port){
         flex-direction: column;
     }

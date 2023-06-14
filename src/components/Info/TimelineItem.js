@@ -4,7 +4,7 @@ import { ThemeContext } from "../../contexts/ThemeContext";
 const TimeLineItem = ({item}) => {
     const {theme} = useContext(ThemeContext);
     return (
-    <div className="timeline-container">
+    <div className="timeline-container-a">
         <div className="timeline-item">
             <div className="timeline-item__info">
                 <h3 className="timeline-item__info__name" data-aos="fade-right" data-aos-duration="1000" style={{color: theme.accent}}>{item.name}</h3>
