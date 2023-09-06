@@ -7,6 +7,7 @@ import ScrollToTop from './functionality/ScrollToTop';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 
+//test comment
 
 function App() {
   const {theme} = useContext(ThemeContext);
