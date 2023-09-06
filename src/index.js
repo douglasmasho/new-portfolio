@@ -5,6 +5,7 @@ import ThemeContextProvider from "./contexts/ThemeContext";
 import {BrowserRouter} from "react-router-dom";
 import { hydrate, render } from "react-dom";
 
+//testing if the changes are there
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
