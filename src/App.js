@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 
 //test comment
+//new test comment
 
 function App() {
   const {theme} = useContext(ThemeContext);
