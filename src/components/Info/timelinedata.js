@@ -27,7 +27,7 @@ export const timelineData = [
     {
         name: "Muhoko",
         tag: "Junior Software Developer",
-        time: "JUL 2022 - Present",
+        time: "JUL 2022 - JAN 2023",
         description: "Writing and Debugging Code. Troubleshooting software issues. Working closely with developers to improve product functionality. Attending developer meetings. Participating in code reviews and quality assurance activities",
         techlist: ["Flutter", "Dart", "Hostgator"],
         imgsrc: MuhokoLogo,

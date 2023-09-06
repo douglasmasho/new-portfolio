@@ -6,13 +6,13 @@ export const achievementsData = [
   {
     name: "Best 2nd Year Student in the Department",
     tag: "Department of Computing, Mathematical and Statistical sciences (UNAM)",
-    time: "2022",
+    time: "Received 2023",
     imgsrc: Best2nd,
   },
   {
     name: "Best 1st Year Student in the Faculty",
     tag: "Faculty of Agriculture, Engineering and Natural Sciences",
-    time: "2021",
+    time: "Received 2022",
 
     imgsrc: Best1st,
   },

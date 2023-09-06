@@ -20,8 +20,7 @@ const Achievements = () => {
 
             <section id="timeline" style={{padding: "10rem"}}>
             <div className="center-hrz--col u-margin-bottom">
-                <h3 className="header-text" style={{color: theme.accent}} data-aos="zoom-out">Timeline</h3>
-                <h4 className="bigger-text white-text light-text-1 center-text">Hover/tap Thumbnail to view demo and source</h4>
+                <h3 className="header-text" style={{color: theme.accent}} data-aos="zoom-out">Certificates</h3>
             </div>
             {achievementsData.map(item=>(
                 <Achievementitem item={item}/>
